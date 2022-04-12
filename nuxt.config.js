@@ -4,7 +4,7 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
   router: {
-    base: '/open-video-game-library/'
+    base: '/info/'
   },
 
   generate: {
