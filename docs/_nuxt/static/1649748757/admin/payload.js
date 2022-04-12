@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/admin", {data:[{isCreateMode:false,formData:{id:""}}],fetch:{},mutations:void 0});

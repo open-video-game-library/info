@@ -1,0 +1,75 @@
+html {
+    font-family: "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+    font-size: 16px;
+    word-spacing: 1px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.wrapper {
+    background: #F5F5F5;
+    width: 100%;
+    min-height: calc(100vh - 61px);
+}
+
+.container:not(.__nuxt-error-page) {
+    min-height: calc(100vh - 61px);
+    /* display: flex;
+    justify-content: center;
+    align-items: flex-start; */
+}
+
+.content-wrapper {
+    width: 100%;
+}
+.content-container {
+    width: 96%;
+    max-width: 780px;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+
+.page-heading {
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+    padding: 100px 0;
+}
+.page-heading .logo{
+    height: 38px;
+    align-items: flex-end;
+}
+.sub-headline {
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: 8px;
+}
+
+.el-card {
+    flex: 1;
+}
+
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+
+.bg-white { background-color: #FFFFFF; }
+
+h2, p {
+    padding: 30px 0;
+}
+li {
+    padding: 15px 0;
+}
+
+.hover-pointer:hover {
+    cursor: pointer;
+}
