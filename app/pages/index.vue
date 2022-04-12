@@ -18,7 +18,7 @@
                         to="/about"
                         class="hover-pointer"
                         tag="img" 
-                        :src="playBtnSrc"
+                        v-bind:src="playBtnSrc"
                         style="height: 48px;"
                         @mouseover.native="playBtnSrc = playBtnSrc1"
                         @mouseleave.native="playBtnSrc = playBtnSrc0"

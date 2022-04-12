@@ -1,6 +1,6 @@
 <template>
     <div class="text-center">
-        <img :src="require(`@/assets/image/member/${name_short}.jpg`)" />
+        <img v-bind:src="require(`@/assets/image/member/${name_short}.jpg`)" />
         <p style="font-size: 24px; padding-top: 0;">{{ name }}</p>
     </div>
 </template>
@@ -12,6 +12,7 @@ export default {
         name_en: String,
         name_short: String,
         grade: String,
+        twitter: String,
         homepage: String
     }
 }

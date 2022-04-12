@@ -6,7 +6,7 @@
 
 <style scoped>
 .wrapper {
-    background-image: url(@/assets/image/background/Top.png);
+    background-image: url("~@/assets/image/background/Top.png");
     background-size: cover;
     background-position: 50%;
 }

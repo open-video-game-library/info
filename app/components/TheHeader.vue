@@ -5,23 +5,23 @@
         active-text-color="#ffd04b">
 
         <el-menu-item index="5" style="float: right;" :route="{ path: '/contact/'}">
-            <img :src="require('@/assets/image/logo/Contact_logo_only.png')" />
+            <img src="@/assets/image/logo/Contact_logo_only.png" />
             <span>Contact</span>
         </el-menu-item>
         <el-menu-item index="4" style="float: right;" :route="{ path: '/article/'}">
-            <img :src="require('@/assets/image/logo/Article_logo_only.png')" />
+            <img src="@/assets/image/logo/Article_logo_only.png" />
             <span>Article</span>
         </el-menu-item>
         <el-menu-item index="3" style="float: right;" :route="{ path: '/tool/'}">
-            <img :src="require('@/assets/image/logo/Tool_logo_only.png')" />
+            <img src="@/assets/image/logo/Tool_logo_only.png" />
             <span>Tool</span>
         </el-menu-item>
-        <el-menu-item index="2" style="float: right;" :route="{ path: '/Game/' }">
-            <img :src="require('@/assets/image/logo/Game_logo_only.png')" />
+        <el-menu-item index="2" style="float: right;" :route="{ path: '/game/' }">
+            <img src="@/assets/image/logo/Game_logo_only.png" />
             <span>Game</span>
         </el-menu-item>
-        <el-menu-item index="1" style="float: right;">
-            <img :src="require('@/assets/image/logo/About_logo_only.png')"  />
+        <el-menu-item index="1" style="float: right;" :route="{ path: '/about/' }">
+            <img src="@/assets/image/logo/About_logo_only.png"  />
             <span>About</span>
         </el-menu-item>
 

@@ -3,7 +3,7 @@
         <section class="content-wrapper bg-white">
             <div class="content-container">
                 <h1 class="page-heading">
-                    <img class="logo" :src="require('@/assets/image/logo/About_logo_black.png')" />
+                    <img class="logo" src="@/assets/image/logo/About_logo_black.png" />
                     <span style="font-size: 38px;">About</span>
                     <span class="sub-headline">このサービスについて</span>
                 </h1>
@@ -36,7 +36,7 @@
                         to="/game"
                         class="hover-pointer"
                         tag="img" 
-                        :src="gameBtnSrc"
+                        v-bind:src="gameBtnSrc"
                         style="height: 48px;"
                         @mouseover.native="gameBtnSrc = gameBtnSrc1"
                         @mouseleave.native="gameBtnSrc = gameBtnSrc0"
@@ -52,7 +52,7 @@
                         to="/tool"
                         class="hover-pointer"
                         tag="img" 
-                        :src="toolBtnSrc"
+                        v-bind:src="toolBtnSrc"
                         style="height: 48px;"
                         @mouseover.native="toolBtnSrc = toolBtnSrc1"
                         @mouseleave.native="toolBtnSrc = toolBtnSrc0"
@@ -68,7 +68,7 @@
                         to="/article"
                         class="hover-pointer"
                         tag="img" 
-                        :src="articleBtnSrc"
+                        v-bind:src="articleBtnSrc"
                         style="height: 48px;"
                         @mouseover.native="articleBtnSrc = articleBtnSrc1"
                         @mouseleave.native="articleBtnSrc = articleBtnSrc0"
