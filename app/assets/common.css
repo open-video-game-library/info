@@ -7,6 +7,8 @@ html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
+
+    color: #555C64;
 }
 
 *, *:before, *:after {
@@ -33,24 +35,32 @@ html {
 .content-container {
     width: 96%;
     max-width: 780px;
-    padding: 30px 0;
+    padding: 120px 0;
     margin: 0 auto;
 }
+
+.content-container > h2 {
+    margin-bottom: 30px;
+}
+.content-container > h3, .content-container > p {
+    margin: 30px 0;
+}
+
+.mtb-l { margin: 30px 0; }
+.mtb-s { margin: 15px 0; }
 
 .page-heading {
     display: flex;
     justify-content: left;
-    align-items: baseline;
-    padding: 100px 0;
+    align-items: center;
+    padding: 90px 0;
 }
-.page-heading .logo{
-    height: 38px;
-    align-items: flex-end;
-}
-.sub-headline {
+.page-heading > .material-icons { font-size: 59px; }
+.page-heading > .sub-headline {
     font-size: 16px;
     font-weight: normal;
     margin-left: 8px;
+    margin-top: 22px;
 }
 
 .el-card {
@@ -63,13 +73,59 @@ html {
 
 .bg-white { background-color: #FFFFFF; }
 
-h2, p {
-    padding: 30px 0;
-}
-li {
-    padding: 15px 0;
-}
-
 .hover-pointer:hover {
     cursor: pointer;
+}
+
+.article-link { display: inline-block; }
+.article-link > a {
+    display: inline-block;
+    padding: 2px 16px;
+    background-color: blue;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-radius: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.article-link > .material-icons { font-size: 0.8em; }
+
+.full-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.unity-wrapper {
+    width: 100%;
+}
+
+.dl-btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.btn-icon {
+    display: inline-block;
+}
+.btn-icon > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: #F5F5F5 1px solid;
+    color: white;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 32px;
+    width: 240px;
+}
+.btn-icon > a > .material-icons {
+    font-size: 32px;
 }

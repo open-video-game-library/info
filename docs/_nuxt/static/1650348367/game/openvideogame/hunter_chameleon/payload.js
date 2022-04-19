@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/game/openvideogame/hunter_chameleon", (function(a,b){return {data:[{game:[{name:"3Dモデル",img:a,to:b},{name:"サウンド",img:a,to:b},{name:"エフェクト",img:a,to:b},{name:"UI\u002Fインタフェース",img:a,to:b},{name:"ライブラリ\u002F開発言語",img:a,to:b},{name:"教育\u002F学習",img:a,to:b},{name:"その他",img:a,to:b}]}],fetch:{},mutations:void 0}}("no_image.png","")));

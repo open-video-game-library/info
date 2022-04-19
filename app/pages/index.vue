@@ -56,6 +56,5 @@ export default {
     border: 1px white solid;
     border-radius: 20px;
     padding: 15px 0;
-    background-image: url(@/assets/image/background/Top.png);
 }
 </style>

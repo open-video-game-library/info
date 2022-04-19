@@ -3,7 +3,7 @@
         <section class="content-wrapper bg-white">
             <div class="content-container">
                 <h1 class="page-heading">
-                    <img class="logo" src="@/assets/image/logo/About_logo_black.png" />
+                    <span class="material-icons">info</span>
                     <span style="font-size: 38px;">About</span>
                     <span class="sub-headline">このサービスについて</span>
                 </h1>
@@ -244,4 +244,7 @@ export default {
 </script>
 
 <style scoped>
+li {
+    margin: 20px 0;
+}
 </style>

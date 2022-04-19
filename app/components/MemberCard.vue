@@ -1,7 +1,7 @@
 <template>
     <div class="text-center">
         <img v-bind:src="require(`@/assets/image/member/${name_short}.jpg`)" />
-        <p style="font-size: 24px; padding-top: 0;">{{ name }}</p>
+        <p style="font-size: 24px; margin-bottom: 30px;">{{ name }}</p>
     </div>
 </template>
 
