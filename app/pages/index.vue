@@ -6,11 +6,16 @@
                 <div style="font-size: 40px; font-weight: 600;">Open Video Game Library</div>
             </div>
 
-            <el-row class="rect" :gutter="40" style="margin: 0 auto;">
+            <p style="padding: 0; height: 48px;">
+                このサイトではゲーム研究に使えるゲームのダウンロードや研究を進める上でのヒントを知ることができます。
+            </p>
+            <div class="text-center" style="margin-top: 15px">
+                <button>Play</button>
+            </div>
+
+            <!-- <el-row class="rect" :gutter="40" style="margin: 0 auto;">
                 <el-col :span="17">
-                    <p style="padding: 0; height: 48px;">
-                        このサイトではゲーム研究に使えるゲームのダウンロード<br />や研究を進める上でのヒントを知ることができます。
-                    </p>
+                    
                 </el-col>
                 <el-col :span="7" class="text-center"
                     style="height: 48px; border-left: 1px white solid;">
@@ -24,7 +29,7 @@
                         @mouseleave.native="playBtnSrc = playBtnSrc0"
                     ></nuxt-link>
                 </el-col>
-            </el-row>
+            </el-row> -->
         </div>
     </div>
 </template>
@@ -56,5 +61,35 @@ export default {
     border: 1px white solid;
     border-radius: 20px;
     padding: 15px 0;
+}
+
+/* From uiverse.io by @barisdogansutcu */
+button {
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+}
+
+button:hover {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+    cursor: pointer;
+}
+
+button:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
 }
 </style>

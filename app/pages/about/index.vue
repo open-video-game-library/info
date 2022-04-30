@@ -19,7 +19,7 @@
             </div>
             <div class="content-container"
                 style="padding-bottom: 120px; position: absolute; left: 0; right: 0; bottom: 0;">
-                <h2>
+                <h2 style="margin-bottom: 30px;">
                     Open Video Game Libraryはゲーム研究を行いやすくし、
                     <br />ゲーム研究の発展に貢献することを目的としたゲーム研究者ライブラリです。
                 </h2>
