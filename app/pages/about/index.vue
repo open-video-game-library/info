@@ -18,34 +18,23 @@
                 </video>
             </div>
             <div class="content-container"
-                style="padding-bottom: 0; position: absolute; left: 0; right: 0; bottom: 0;">
+                style="padding-bottom: 120px; position: absolute; left: 0; right: 0; bottom: 0;">
                 <h2>
                     Open Video Game Libraryはゲーム研究を行いやすくし、
                     <br />ゲーム研究の発展に貢献することを目的としたゲーム研究者ライブラリです。
                 </h2>
-                <p>
-                    市販ビデオゲームの編集可能性が低い点や、ゲームを自作する際の開発コスト、他研究との比較のしやすさなどを問題視し、研究に使いやすいオープンなビデオゲームを提供しています。
+                <p style="margin: 0;">
+                    市販ビデオゲームの編集可能性が低い点や、ゲームを自作する際の開発コスト、他研究との比較のしやすさなどを問題視し、
+                    <br />研究に使いやすいオープンなビデオゲームを提供しています。
                 </p>
             </div>
         </section>
-        <!-- <section id="Abstract" class="content-wrapper">
-            <div class="content-container">
-                <h2 class="text-center">Open Video Game Libraryとは</h2>
-                <p>
-                    Open Video Game Libraryはゲーム研究を行いやすくし、ゲーム研究の発展に貢献することを目的としたゲーム研究者支援ツールです。主に以下の2点から研究者を支援します。
-                </p>
-                <ul>
-                    <li>ゲーム研究者が研究のために用意するゲームの準備コストを削減する</li>
-                    <li>評価実験を手軽で正しく行うためのツールを提供・紹介する</li>
-                </ul>
-            </div>
-        </section> -->
 
         <section class="content-wrapper bg-white">
             <div class="content-container">
                 <h2 class="text-center">Open Video Game Libraryでできること</h2>
 
-                <el-row :gutter="24">
+                <el-row :gutter="30">
                     <el-col :span="8">
                         <div class="text-center">
                             <img style="width: 80%;" v-bind:src="require('@/assets/image/logo/can1.png')" />
@@ -62,7 +51,7 @@
                         </div>
                     </el-col>
                 </el-row>
-                <el-row :gutter="24" :align="middle">
+                <el-row :gutter="30">
                     <el-col :span="8" class="flex-center">
                         <h3 class="text-center">ゲームを見つけ、利用できる</h3>
                     </el-col>
@@ -73,7 +62,7 @@
                         <h3 class="text-center">ゲーム開発・ゲーム研究に<br />有益な情報を取得できる</h3>
                     </el-col>
                 </el-row>
-                <el-row :gutter="24">
+                <el-row :gutter="30">
                     <el-col :span="8">
                         <p>
                             研究で利用されることを前提に、作成されたオープンビデオゲームや、ソースコードが公開され、研究に合わせて修正できるオープンソースゲームを見つけ、利用することができます。
@@ -90,7 +79,7 @@
                         </p>
                     </el-col>
                 </el-row>
-                <el-row :gutter="24">
+                <el-row :gutter="30">
                     <el-col :span="8">
                         <button class="btn-page" @click="$router.push('/tool')">
                             <span class="text">ゲームを見つける</span>
@@ -290,7 +279,7 @@ li {
 .video-wrapper {
 	position: relative;
 	width: 100%;
-    height: 720px;
+    height: calc(100vh - 61px);
 	overflow: hidden;
 }
 .video-wrapper video {
@@ -310,7 +299,7 @@ li {
 	right: 0;
     left: 0;
 	width: 100%;
-    height: 720px;
+    height: calc(100vh - 61px);
 	background-color: rgba(0,0,0,0.3);
 	background-image: radial-gradient(#111 30%, transparent 31%), radial-gradient(#111 30%, transparent 31%);
 	background-size: 4px 4px;

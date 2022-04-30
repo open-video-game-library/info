@@ -15,7 +15,7 @@
             <div class="content-container">
                 <p>このページでは、ゲーム開発に使えるアセットを紹介します。</p>
                 <h2 class="text-center">アセット</h2>
-                <el-row :gutter="24">
+                <el-row :gutter="30">
                     <el-col :span="12" v-for="gm in game" :key="gm.name_short">
                         <GenreCard
                             :name="gm.name"

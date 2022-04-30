@@ -1,8 +1,8 @@
 <template>
-    <el-menu mode="horizontal" :router="{ path: '/about/' }"
-        background-color="#545c64"
+    <el-menu mode="horizontal" :router="true"
+        background-color="#04062D"
         text-color="#fff"
-        active-text-color="#ffd04b">
+        active-text-color="#fff">
 
         <el-menu-item index="5" style="float: right;" :route="{ path: '/contact/'}">
             <span class="material-icons">email</span>
@@ -30,4 +30,7 @@
 
 <style scoped>
 .material-icons { font-size: 24px; }
+.e:hover{
+    background-color: #fff;
+}
 </style>>

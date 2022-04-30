@@ -15,7 +15,7 @@
             <div class="content-container">
                 <p>このページでは、コードが公開されているオープンソースのゲームを紹介します。研究に合ったゲームを探してみましょう。</p>
                 <h2 class="text-center">ゲームジャンル</h2>
-                <el-row :gutter="24">
+                <el-row :gutter="30">
                     <el-col :span="12" v-for="gm in game" :key="gm.name_short">
                         <GenreCard
                             :name="gm.name"

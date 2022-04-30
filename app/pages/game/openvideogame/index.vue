@@ -16,7 +16,7 @@
                 <h2 class="text-center">ガイドライン</h2>
                 <p>このガイドラインでは、オープンビデオゲームを研究にご活用いただく際のルールやFAQなどについて、ご説明いたします。</p>
                 <h3 class="text-center">ご利用OK/NG例</h3>
-                <el-row :gutter="24">
+                <el-row :gutter="30">
                     <el-col :span="24">
                         <h4 class="text-center">OK</h4>
                         <el-card class="el-card">
@@ -48,7 +48,7 @@
                 </el-row>
 
                 <h3 class="text-center" style="margin: 60px 0 20px;">研究利用時の推奨事項</h3>
-                <el-row :gutter="24">
+                <el-row :gutter="30">
                     <el-col :span="24">
                         <el-card class="el-card">
                             <el-card class="el-card">
@@ -72,7 +72,7 @@
         <section class="content-wrapper bg-white">
             <div class="content-container">
                 <h2 class="text-center">ゲーム一覧</h2>
-                <el-row :gutter="24">
+                <el-row :gutter="30">
                     <el-col :span="12" v-for="gm in game" :key="gm.name_short">
                         <GenreCard
                             :name="gm.name"

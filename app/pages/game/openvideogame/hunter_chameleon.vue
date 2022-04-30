@@ -68,7 +68,7 @@
         <section class="content-wrapper bg-white">
             <div class="content-container">
                 <h3 class="text-center">パラメータ</h3>
-                <el-row :gutter="24">
+                <el-row :gutter="30">
                     <el-col :span="12">
                         <h4>調整可能パラメータ</h4>
                         <ul>

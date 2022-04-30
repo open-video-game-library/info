@@ -13,7 +13,7 @@
 
         <section class="content-wrapper bg-white">
             <div class="content-container">
-                <el-row :gutter="24" style="width: 100%;">
+                <el-row :gutter="30" style="width: 100%;">
                     <el-col :span="12" v-for="gm in game" :key="gm.title">
                         <GameCard
                             style="margin-bottom: 24px;"

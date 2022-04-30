@@ -15,7 +15,6 @@ const firebaseConfig = {
 }
 
 if (!firebase.apps.length) {
-    console.log(process.env.apiKey)
     firebase.initializeApp(firebaseConfig)
 }
 
