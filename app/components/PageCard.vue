@@ -1,7 +1,8 @@
 <template>
     <el-card class="card-wrapper" :body-style="{padding: '0px'}" shadow="hover">
-        <nuxt-link :to="'/' + to" class="hover-pointer full-link"></nuxt-link>
-        <img v-bind:src="require(`@/assets/image/thumbnail/${img}`)" class="image" />
+        <nuxt-link :to="to" class="hover-pointer full-link"></nuxt-link>
+        <img v-if="img===''" v-bind:src="require('@/assets/image/thumbnail/no_image.png')" class="image" />
+        <img v-else v-bind:src="require(`@/assets/image/thumbnail/${img}`)" class="image" />
         <div class="hover-elems">
             <h2 class="title text-center">{{ title }}</h2>
         </div>
@@ -22,6 +23,8 @@ export default {
 <style scoped>
 .card-wrapper {
     position: relative;
+    width: 448px;
+    height: 252px;
 }
 .hover-elems {
     background-color: rgba(255, 255, 255, 0.8);
@@ -43,8 +46,8 @@ export default {
 }
 .image {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 448px;
+    height: 252px;
     z-index: 1;
 }
 

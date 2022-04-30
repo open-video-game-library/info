@@ -51,7 +51,7 @@
                         </div>
                     </el-col>
                 </el-row>
-                <el-row :gutter="30">
+                <el-row :gutter="30" style="margin-top: 10px;">
                     <el-col :span="8" class="flex-center">
                         <h3 class="text-center">研究で使えるゲームを見つける</h3>
                     </el-col>
@@ -79,7 +79,7 @@
                         </p>
                     </el-col>
                 </el-row>
-                <el-row :gutter="30">
+                <el-row :gutter="30" style="margin-top: 30px;">
                     <el-col :span="8">
                         <button class="btn-page" @click="$router.push('/tool')">
                             <span class="text">ゲームを見つける</span>

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/game/openvideogame/open_fps", {data:[{}],fetch:{},mutations:[]});

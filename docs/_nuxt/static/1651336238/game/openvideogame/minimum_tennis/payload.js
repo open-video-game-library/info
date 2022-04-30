@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/game/openvideogame/minimum_tennis", {data:[{}],fetch:{},mutations:[]});

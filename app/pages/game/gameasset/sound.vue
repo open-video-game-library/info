@@ -41,6 +41,12 @@ export default {
         return {
             sound: [
                 {
+                    name: 'Audiostock',
+                    desc: '曲のアレンジOK (音量調節、テンポ変更、ピッチ変更、エコライジング処理、フェードイン・フェードアウト、ループ処理、カットその他音響効果制作に通常伴う加工以外はこの限りではない)。二次配布は禁止。基本的に有料だが、期間限定で無料DLできる曲がある。BGM・SE・ボイス・歌を提供。',
+                    img: 'asset/sound/audiostock.png',
+                    url: 'https://audiostock.jp/'
+                },
+                {
                     name: 'Dova-Syndrome',
                     desc: 'クレジット表記してくれると嬉しい。曲のアレンジOK。二次配布は禁止。様々なプロダクトで使えるBGMやSEを提供。',
                     img: 'asset/sound/dova.png',
@@ -81,12 +87,6 @@ export default {
                     desc: 'クレジット表記してくれると嬉しい。曲のアレンジOK。二次配布は禁止。BGMを提供。',
                     img: 'asset/sound/peritune.png',
                     url: 'https://peritune.com/'
-                },
-                {
-                    name: 'Audiostock',
-                    desc: '曲のアレンジOK (音量調節、テンポ変更、ピッチ変更、エコライジング処理、フェードイン・フェードアウト、ループ処理、カットその他音響効果制作に通常伴う加工以外はこの限りではない)。二次配布は禁止。基本的に有料だが、期間限定で無料DLできる曲がある。BGM・SE・ボイス・歌を提供。',
-                    img: 'asset/sound/audiostock.png',
-                    url: 'https://audiostock.jp/'
                 },
                 {
                     name: 'H/MIX GALLERY',

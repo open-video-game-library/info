@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/game/openvideogame/sliding_penguin", {data:[{}],fetch:{},mutations:[]});

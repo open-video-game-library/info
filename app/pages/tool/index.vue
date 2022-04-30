@@ -16,7 +16,7 @@
                 <h2 class="text-center">評価実験</h2>
                 <el-row style="width: 100%;">
                     <el-col :span="8" v-for="exp in experiment" :key="exp.name">
-                        <ExternalSiteCard
+                        <SiteCard
                             style="margin-bottom: 24px;"
                             :name="exp.name"
                             :desc="exp.desc"

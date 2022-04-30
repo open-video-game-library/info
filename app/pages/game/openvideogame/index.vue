@@ -14,7 +14,7 @@
         <section class="content-wrapper">
             <div class="content-container">
                 <h2 class="text-center">ガイドライン</h2>
-                <p>このガイドラインでは、オープンビデオゲームを研究にご活用いただく際のルールやFAQなどについて、ご説明いたします。</p>
+                <p class="text-center">このガイドラインでは、オープンビデオゲームを研究にご活用いただく際のルールやFAQなどについて、ご説明いたします。</p>
                 <h3 class="text-center">ご利用OK/NG例</h3>
                 <el-row :gutter="30">
                     <el-col :span="24">
@@ -73,21 +73,13 @@
             <div class="content-container">
                 <h2 class="text-center">ゲーム一覧</h2>
                 <el-row :gutter="30">
-                    <el-col :span="12" v-for="gm in game" :key="gm.name_short">
-                        <GenreCard
-                            :name="gm.name"
-                            :img="gm.img"
-                            :to="gm.to"
+                    <el-col :span="12" v-for="game in games" :key="game.title">
+                        <PageCard
+                            :title="game.title"
+                            :img="game.img"
+                            :to="game.to"
                             style="margin-bottom: 24px;"
                         />
-                    </el-col>
-                    <el-col :span="12">
-                        <el-card :body-style="{padding: '0px', position: 'relative'}"
-                            style="margin-top: 30.5px;">
-                            <nuxt-link to="/contact" class="hover-pointer full-link"></nuxt-link>
-                            <img v-bind:src="require(`@/assets/image/thumbnail/more.png`)"
-                                style="display: block; width: 100%; height: 100%;" />
-                        </el-card>
                     </el-col>
                 </el-row>
             </div>
@@ -113,39 +105,44 @@
 </template>
 
 <script>
-import GenreCard from '~/components/GenreCard.vue'
+import PageCard from '~/components/PageCard.vue'
 
 export default {
     components: {
-        GenreCard
+        PageCard
     },
     asyncData() {
         return {
-            game: [
+            games: [
                 {
-                    name: "Hunter-Chameleon",
-                    img: "no_image.png",
+                    title: "Hunter-Chameleon",
+                    img: "openvideogame/chameleon.png",
                     to: "openvideogame/hunter_chameleon"
                 },
                 {
-                    name: "Escape fish",
-                    img: "no_image.png",
-                    to: ""
+                    title: "Escape fish",
+                    img: "openvideogame/iwashi.png",
+                    to: "openvideogame/escape_fish"
                 },
                 {
-                    name: "Sliding peuguin",
-                    img: "no_image.png",
-                    to: ""
+                    title: "Sliding peuguin",
+                    img: "openvideogame/penguin.png",
+                    to: "openvideogame/sliding_penguin"
                 },
                 {
-                    name: "Minimum tennis",
-                    img: "no_image.png",
-                    to: ""
+                    title: "Minimum tennis",
+                    img: "openvideogame/tennis.png",
+                    to: "openvideogame/minimum_tennis"
                 },
                 {
-                    name: "Open FPS",
-                    img: "no_image.png",
-                    to: ""
+                    title: "Open FPS",
+                    img: "openvideogame/fps.png",
+                    to: "openvideogame/open_fps"
+                },
+                {
+                    title: "こういうゲームがほしい！",
+                    img: "more.png",
+                    to: "/contact"
                 }
             ]
         }

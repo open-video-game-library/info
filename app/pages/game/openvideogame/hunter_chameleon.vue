@@ -20,7 +20,7 @@
                 <div class="unity-wrapper">
                     <iframe
                         src="https://keitalab.github.io/hunter_chameleon/"
-                        width="960" height="540"
+                        width="960" height="650"
                         scrolling="no" frameborder="0"
                         allowfullscreen
                     ></iframe>

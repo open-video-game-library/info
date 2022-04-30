@@ -16,8 +16,7 @@
                 <el-row :gutter="30" style="width: 100%;">
                     <el-col :span="12" v-for="gm in game" :key="gm.title">
                         <PageCard
-                            style="margin-bottom: 24px;"
-                            class="grid-content"
+                            style="margin-bottom: 30px;"
                             :title="gm.title"
                             :img="gm.img"
                             :to="gm.to"
@@ -42,22 +41,22 @@ export default {
                 {
                     title: 'オープンビデオゲーム',
                     img: 'Game_openvideogame.gif',
-                    to: 'game/openvideogame'
+                    to: 'openvideogame'
                 },
                 {
                     title: 'ブラウザゲーム',
                     img: 'Game_browser.png',
-                    to: 'game/browsergame'
+                    to: 'browsergame'
                 },
                 {
                     title: 'オープンソースゲーム',
                     img: 'Game_opensourse.png',
-                    to: 'game/opensoursegame'
+                    to: 'opensoursegame'
                 },
                 {
                     title: 'ゲームアセット',
                     img: 'Game_asset.png',
-                    to: 'game/gameasset'
+                    to: 'gameasset'
                 },
             ]
         }
