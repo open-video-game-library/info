@@ -9,8 +9,8 @@
         <div>
             <img v-bind:src="require(`@/assets/image/thumbnail/${img}`)" class="image" />
         </div>
-        <h3 class="title">{{ name }}</h3>
-        <p>{{ desc }}</p>
+        <h3 style="margin-top: 10px;">{{ name }}</h3>
+        <p style="color: #555C64">{{ desc }}</p>
     </el-card>
 </template>
 

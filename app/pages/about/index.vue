@@ -53,13 +53,13 @@
                 </el-row>
                 <el-row :gutter="30">
                     <el-col :span="8" class="flex-center">
-                        <h3 class="text-center">ゲームを見つけ、利用できる</h3>
+                        <h3 class="text-center">研究で使えるゲームを見つける</h3>
                     </el-col>
                     <el-col :span="8" class="flex-center">
-                        <h3 class="text-center">評価実験を手軽に正しく行える</h3>
+                        <h3 class="text-center">研究で使えるツールを見つける</h3>
                     </el-col>
                     <el-col :span="8" class="flex-center">
-                        <h3 class="text-center">ゲーム開発・ゲーム研究に<br />有益な情報を取得できる</h3>
+                        <h3 class="text-center">ゲーム研究の知見を深める</h3>
                     </el-col>
                 </el-row>
                 <el-row :gutter="30">

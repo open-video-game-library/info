@@ -67,7 +67,7 @@ export default {
             development: [
                 {
                     name: 'Game Controllerizer',
-                    desc: '',
+                    desc: 'Game Controllerizerはディジタルゲーム拡張のためのミドルウェアです。多様な機器および情報源を既存ゲームへの入力として扱うことができます。',
                     img: 'Tool_game_controllerizer.png',
                     url: 'https://sites.google.com/view/gamecontrollerizer'
                 }
