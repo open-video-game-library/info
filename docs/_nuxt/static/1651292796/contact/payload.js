@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/contact", (function(a){return {data:[{form:{name:a,email:a,message:a},formInfo:{action:"https:\u002F\u002Fdocs.google.com\u002Fforms\u002Fu\u002F0\u002Fd\u002Fe\u002F1FAIpQLScpDBuQV0ca-PTrxrzm4QniH_u5_wF-3SGEHx1FT3SVJGbpqg\u002FformResponse",name:"entry.1143921380",email:"entry.1555803700",message:"entry.752954745"},error_msg:a}],fetch:{},mutations:[]}}("")));

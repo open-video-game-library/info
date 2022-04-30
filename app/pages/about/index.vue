@@ -10,8 +10,23 @@
             </div>
         </section>
 
-        <section id="Abstract" class="content-wrapper">
-            <img style="width: 100%;" v-bind:src="require('@/assets/image/background/Abst.png')" />
+        <section id="Abstract" class="content-wrapper" style="position: relative; color: white;">
+            <!-- <img style="width: 100%;" v-bind:src="require('@/assets/image/background/Abst.png')" /> -->
+            <div class="video-wrapper text-center">
+                <video autoplay muted loop playsinline>
+                    <source v-bind:src="require('@/assets/image/background/Abst_movie.mp4')" />
+                </video>
+            </div>
+            <div class="content-container"
+                style="padding-bottom: 0; position: absolute; left: 0; right: 0; bottom: 0;">
+                <h2>
+                    Open Video Game Libraryはゲーム研究を行いやすくし、
+                    <br />ゲーム研究の発展に貢献することを目的としたゲーム研究者ライブラリです。
+                </h2>
+                <p>
+                    市販ビデオゲームの編集可能性が低い点や、ゲームを自作する際の開発コスト、他研究との比較のしやすさなどを問題視し、研究に使いやすいオープンなビデオゲームを提供しています。
+                </p>
+            </div>
         </section>
         <!-- <section id="Abstract" class="content-wrapper">
             <div class="content-container">
@@ -35,34 +50,58 @@
                         <div class="text-center">
                             <img style="width: 80%;" v-bind:src="require('@/assets/image/logo/can1.png')" />
                         </div>
-                        <h3 class="text-center" style="margin-top: 24px;">ゲームを見つけ、<br />利用できる</h3>
-                        <p style="margin-top: 24px;">
-                            研究で利用されることを前提に、作成されたオープンビデオゲームや、ソースコードが公開され、研究に合わせて修正できるオープンソースゲームを見つけ、利用することができます。
-                        </p>
-                        <button class="btn-page" @click="$router.push('/game')">
-                            <span class="text">ゲームを見つける</span>
-                        </button>
                     </el-col>
                     <el-col :span="8">
                         <div class="text-center">
                             <img style="width: 80%;" v-bind:src="require('@/assets/image/logo/can2.png')" />
                         </div>
-                        <h3 class="text-center" style="margin-top: 24px;">評価実験を手軽に<br />正しく行える</h3>
-                        <p style="margin-top: 24px;">
-                            ゲームを用いた体験やデバイスの評価実験を行う際に有益な録画機能や、アンケートを見つけ、利用することができます。
-                        </p>
-                        <button class="btn-page" @click="$router.push('/tool')">
-                            <span class="text">ツールを見つける</span>
-                        </button>
                     </el-col>
                     <el-col :span="8">
                         <div class="text-center">
                             <img style="width: 80%;" v-bind:src="require('@/assets/image/logo/can3.png')" />
                         </div>
-                        <h3 class="text-center" style="margin-top: 24px;">ゲーム開発・ゲーム研究に<br />有益な情報を取得できる</h3>
-                        <p style="margin-top: 24px;">
+                    </el-col>
+                </el-row>
+                <el-row :gutter="24" :align="middle">
+                    <el-col :span="8" class="flex-center">
+                        <h3 class="text-center">ゲームを見つけ、利用できる</h3>
+                    </el-col>
+                    <el-col :span="8" class="flex-center">
+                        <h3 class="text-center">評価実験を手軽に正しく行える</h3>
+                    </el-col>
+                    <el-col :span="8" class="flex-center">
+                        <h3 class="text-center">ゲーム開発・ゲーム研究に<br />有益な情報を取得できる</h3>
+                    </el-col>
+                </el-row>
+                <el-row :gutter="24">
+                    <el-col :span="8">
+                        <p>
+                            研究で利用されることを前提に、作成されたオープンビデオゲームや、ソースコードが公開され、研究に合わせて修正できるオープンソースゲームを見つけ、利用することができます。
+                        </p>
+                    </el-col>
+                    <el-col :span="8">
+                        <p>
+                            ゲームを用いた体験やデバイスの評価実験を行う際に有益な録画機能や、アンケートを見つけ、利用することができます。
+                        </p>
+                    </el-col>
+                    <el-col :span="8">
+                        <p>
                             ゲーム開発をする上でためになる情報や、ゲーム研究をする上で抑えておくべきポイントを知ることができます。
                         </p>
+                    </el-col>
+                </el-row>
+                <el-row :gutter="24">
+                    <el-col :span="8">
+                        <button class="btn-page" @click="$router.push('/tool')">
+                            <span class="text">ゲームを見つける</span>
+                        </button>
+                    </el-col>
+                    <el-col :span="8">
+                        <button class="btn-page" @click="$router.push('/tool')">
+                            <span class="text">ツールを見つける</span>
+                        </button>
+                    </el-col>
+                    <el-col :span="8">
                         <button class="btn-page" @click="$router.push('/article')">
                             <span class="text">記事を読む</span>
                         </button>
@@ -240,5 +279,41 @@ export default {
 <style scoped>
 li {
     margin: 20px 0;
+}
+.flex-center {
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-wrapper {
+	position: relative;
+	width: 100%;
+    height: 720px;
+	overflow: hidden;
+}
+.video-wrapper video {
+    object-fit: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.video-wrapper::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+    left: 0;
+	width: 100%;
+    height: 720px;
+	background-color: rgba(0,0,0,0.3);
+	background-image: radial-gradient(#111 30%, transparent 31%), radial-gradient(#111 30%, transparent 31%);
+	background-size: 4px 4px;
+	background-position: 0 0, 2px 2px;
 }
 </style>

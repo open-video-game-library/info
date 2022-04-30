@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/game/openvideogame", (function(a,b){return {data:[{game:[{name:"Hunter-Chameleon",img:a,to:"openvideogame\u002Fhunter_chameleon"},{name:"Escape fish",img:a,to:b},{name:"Sliding peuguin",img:a,to:b},{name:"Minimum tennis",img:a,to:b},{name:"Open FPS",img:a,to:b}]}],fetch:{},mutations:[]}}("no_image.png","")));

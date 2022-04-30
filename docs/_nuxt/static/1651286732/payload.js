@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/", {data:[{playBtnSrc:null,playBtnSrc0:"\u002Finfo\u002F_nuxt\u002Fimg\u002FPlay_Button_0.ad92c80.png",playBtnSrc1:"\u002Finfo\u002F_nuxt\u002Fimg\u002FPlay_Button_1.20aa9c8.png"}],fetch:{},mutations:[]});
