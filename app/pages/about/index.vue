@@ -39,8 +39,8 @@
                         <p style="margin-top: 24px;">
                             研究で利用されることを前提に、作成されたオープンビデオゲームや、ソースコードが公開され、研究に合わせて修正できるオープンソースゲームを見つけ、利用することができます。
                         </p>
-                        <button class="btn-page">
-                            <span class="text">Game</span>
+                        <button class="btn-page" @click="$router.push('/game')">
+                            <span class="text">ゲームを見つける</span>
                         </button>
                     </el-col>
                     <el-col :span="8">
@@ -51,8 +51,8 @@
                         <p style="margin-top: 24px;">
                             ゲームを用いた体験やデバイスの評価実験を行う際に有益な録画機能や、アンケートを見つけ、利用することができます。
                         </p>
-                        <button class="btn-page">
-                            <span class="text">Tool</span>
+                        <button class="btn-page" @click="$router.push('/tool')">
+                            <span class="text">ツールを見つける</span>
                         </button>
                     </el-col>
                     <el-col :span="8">
@@ -63,8 +63,8 @@
                         <p style="margin-top: 24px;">
                             ゲーム開発をする上でためになる情報や、ゲーム研究をする上で抑えておくべきポイントを知ることができます。
                         </p>
-                        <button class="btn-page">
-                            <span class="text">Article</span>
+                        <button class="btn-page" @click="$router.push('/article')">
+                            <span class="text">記事を読む</span>
                         </button>
                     </el-col>
                 </el-row>
