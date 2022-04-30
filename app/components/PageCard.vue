@@ -1,0 +1,64 @@
+<template>
+    <el-card class="card-wrapper" :body-style="{padding: '0px'}" shadow="hover">
+        <nuxt-link :to="'/' + to" class="hover-pointer full-link"></nuxt-link>
+        <img v-bind:src="require(`@/assets/image/thumbnail/${img}`)" class="image" />
+        <div class="hover-elems">
+            <h2 class="title text-center">{{ title }}</h2>
+        </div>
+    </el-card>
+</template>
+
+<script>
+export default {
+    props: {
+        title: String,
+        img: String,
+        to: String
+    }
+}
+</script>
+
+
+<style scoped>
+.card-wrapper {
+    position: relative;
+}
+.hover-elems {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: 5;
+}
+.title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    line-height: 252px;
+}
+.image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.full-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.full-link:hover~.hover-elems{
+    opacity: 1;
+    transition: .2s ease-in-out;
+}
+</style>

@@ -12,11 +12,11 @@
 
         <section id="Experiment" class="content-wrapper">
             <div class="content-container">
-                <h3 class="text-center">ゲーム体験を評価する実験やゲーム開発に役立つツールを紹介します。</h3>
+                <!-- <h3 class="text-center">ゲーム体験を評価する実験やゲーム開発に役立つツールを紹介します。</h3> -->
                 <h2 class="text-center">評価実験</h2>
                 <el-row style="width: 100%;">
                     <el-col :span="8" v-for="exp in experiment" :key="exp.name">
-                        <ArticleCard
+                        <ExternalSiteCard
                             style="margin-bottom: 24px;"
                             :name="exp.name"
                             :desc="exp.desc"
@@ -33,7 +33,7 @@
                 <h2 class="text-center">工学的ツール</h2>
                 <el-row style="width: 100%;">
                     <el-col :span="8" v-for="dev in development" :key="dev.name">
-                        <ArticleCard
+                        <SiteCard
                             style="margin-bottom: 24px;"
                             :name="dev.name"
                             :desc="dev.desc"
@@ -48,11 +48,11 @@
 </template>
 
 <script>
-import ArticleCard from '~/components/ArticleCard.vue'
+import SiteCard from '~/components/SiteCard.vue'
 
 export default {
     components: {
-        ArticleCard
+        SiteCard
     },
     asyncData() {
         return {

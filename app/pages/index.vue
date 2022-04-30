@@ -10,7 +10,12 @@
                 このサイトではゲーム研究に使えるゲームのダウンロードや研究を進める上でのヒントを知ることができます。
             </p>
             <div class="text-center" style="margin-top: 15px">
-                <button>Play</button>
+                <button @click="$router.push('/about')">
+                    <span class="label">Play</span>
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+                    </span>
+                </button>
             </div>
 
             <!-- <el-row class="rect" :gutter="40" style="margin: 0 auto;">
@@ -63,33 +68,56 @@ export default {
     padding: 15px 0;
 }
 
-/* From uiverse.io by @barisdogansutcu */
+/* From uiverse.io by @mateusneves */
 button {
-    padding: 17px 40px;
-    border-radius: 50px;
-    border: 0;
-    background-color: white;
-    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    font-size: 15px;
-    transition: all .5s ease;
-}
-
-button:hover {
+    position: relative;
+    font-size: 14px;
     letter-spacing: 3px;
-    background-color: hsl(261deg 80% 48%);
-    color: hsl(0, 0%, 100%);
-    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+    height: 3em;
+    padding: 0 3em;
+    border: none;
+    background-color: #c41b54;
+    color: #fff;
+    text-transform: uppercase;
+    overflow: hidden;
+    border-radius: 4px
+}
+button:hover {
     cursor: pointer;
 }
-
-button:active {
-    letter-spacing: 3px;
-    background-color: hsl(261deg 80% 48%);
-    color: hsl(0, 0%, 100%);
-    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
-    transform: translateY(10px);
-    transition: 100ms;
+button::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    height: 0px;
+    width: 100%;
+    background: rgb(196,27,84);
+    background: linear-gradient(90deg, rgba(196,27,84,1) 20%, rgba(124,7,46,1) 100%);
+    transition: 0.2s;
+}
+button .label {
+    position: relative;
+}
+button .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    width: 3em;
+    position: absolute;
+    top: 3em;
+    right: 0;
+    opacity: 0;
+    transition: 0.4s;
+}
+button:hover::before {
+    height: 100%;
+}
+button:hover .icon {
+    top: 0;
+    opacity: 1;
 }
 </style>

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/game/openvideogame/hunter_chameleon", {data:[{}],fetch:{},mutations:[]});

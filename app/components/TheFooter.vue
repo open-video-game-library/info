@@ -1,8 +1,10 @@
 <template>
     <section class="content-wrapper">
         <div class="content-container">
+            <div class="text-center">
             <img v-bind:src="require('@/assets/image/logo/logo.png')"
-                style="width: 100%; margin-bottom: 40px" />
+                style="width: 50%; margin-bottom: 40px" />
+            </div>
             <div class="flex">
                 <ul>
                     <span>この取り組みを知る</span>

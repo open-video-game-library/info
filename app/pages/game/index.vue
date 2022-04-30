@@ -12,10 +12,10 @@
         </section>
 
         <section class="content-wrapper bg-white">
-            <div class="content-container">
+            <div class="content-container" style="padding-top: 0;">
                 <el-row :gutter="30" style="width: 100%;">
                     <el-col :span="12" v-for="gm in game" :key="gm.title">
-                        <GameCard
+                        <PageCard
                             style="margin-bottom: 24px;"
                             class="grid-content"
                             :title="gm.title"
@@ -30,11 +30,11 @@
 </template>
 
 <script>
-import GameCard from '~/components/GameCard.vue'
+import PageCard from '~/components/PageCard.vue'
 
 export default {
     components: {
-        GameCard
+        PageCard
     },
     asyncData() {
         return {

@@ -20,7 +20,7 @@
                 <div class="unity-wrapper">
                     <iframe
                         src="https://keitalab.github.io/hunter_chameleon/"
-                        width="768" height="480"
+                        width="960" height="540"
                         scrolling="no" frameborder="0"
                         allowfullscreen
                     ></iframe>
@@ -93,54 +93,6 @@
 </template>
 
 <script>
-import GenreCard from '~/components/GenreCard.vue'
-
-export default {
-    components: {
-        GenreCard
-    },
-    asyncData() {
-        return {
-            game: [
-                {
-                    name: "3Dモデル",
-                    img: "no_image.png",
-                    to: ""
-                },
-                {
-                    name: "サウンド",
-                    img: "no_image.png",
-                    to: ""
-                },
-                {
-                    name: "エフェクト",
-                    img: "no_image.png",
-                    to: ""
-                },
-                {
-                    name: "UI/インタフェース",
-                    img: "no_image.png",
-                    to: ""
-                },
-                {
-                    name: "ライブラリ/開発言語",
-                    img: "no_image.png",
-                    to: ""
-                },
-                {
-                    name: "教育/学習",
-                    img: "no_image.png",
-                    to: ""
-                },
-                {
-                    name: "その他",
-                    img: "no_image.png",
-                    to: ""
-                }
-            ]
-        }
-    }
-}
 </script>
 
 <style scoped>
