@@ -15,11 +15,11 @@
                 <h3 class="text-center">ゲーム体験を評価する実験やゲーム開発に役立つツールを紹介します。</h3>
                 <h2 class="text-center">評価実験</h2>
                 <el-row style="width: 100%;">
-                    <el-col :span="24" v-for="exp in experiment" :key="exp.name">
+                    <el-col :span="8" v-for="exp in experiment" :key="exp.name">
                         <ArticleCard
                             style="margin-bottom: 24px;"
-                            :title="exp.title"
                             :name="exp.name"
+                            :desc="exp.desc"
                             :img="exp.img"
                             :url="exp.url"
                         />
@@ -32,11 +32,11 @@
             <div class="content-container">
                 <h2 class="text-center">工学的ツール</h2>
                 <el-row style="width: 100%;">
-                    <el-col :span="24" v-for="dev in development" :key="dev.name">
+                    <el-col :span="8" v-for="dev in development" :key="dev.name">
                         <ArticleCard
                             style="margin-bottom: 24px;"
-                            :title="dev.title"
                             :name="dev.name"
+                            :desc="dev.desc"
                             :img="dev.img"
                             :url="dev.url"
                         />
@@ -58,16 +58,16 @@ export default {
         return {
             experiment: [
                 {
-                    title: '複数視点をWeb上で録画できるMulti View Recorderを使って体験評価しよう',
                     name: 'Multi View Recorder',
+                    desc: 'Multi View RecorderはWeb上で録画と動画の保存ができるツールです。Webカメラを複数台接続し、他視点を同時に録画することができます。',
                     img: 'Tool_multi_view_recorder.png',
                     url: 'https://open-video-game-library.github.io/multi-view-recorder/'
                 }
             ],
             development: [
                 {
-                    title: 'Game Controllerizerを使って市販ゲームを自作コントローラでプレイしよう',
                     name: 'Game Controllerizer',
+                    desc: '',
                     img: 'Tool_game_controllerizer.png',
                     url: 'https://sites.google.com/view/gamecontrollerizer'
                 }

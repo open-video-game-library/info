@@ -4,13 +4,16 @@
             <div class="content-container">
                 <h1 class="page-heading">
                     <span class="material-icons">info</span>
-                    <span style="font-size: 38px;">About</span>
+                    <span style="font-size: 48px;">About</span>
                     <span class="sub-headline">このサービスについて</span>
                 </h1>
             </div>
         </section>
 
         <section id="Abstract" class="content-wrapper">
+            <img style="width: 100%;" v-bind:src="require('@/assets/image/background/Abst.png')" />
+        </section>
+        <!-- <section id="Abstract" class="content-wrapper">
             <div class="content-container">
                 <h2 class="text-center">Open Video Game Libraryとは</h2>
                 <p>
@@ -21,59 +24,50 @@
                     <li>評価実験を手軽で正しく行うためのツールを提供・紹介する</li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <section class="content-wrapper bg-white">
             <div class="content-container">
                 <h2 class="text-center">Open Video Game Libraryでできること</h2>
 
-                <h3 class="text-center">ゲームを見つけ、利用できる</h3>
-                <p>
-                    研究で利用されることを前提に、作成されたオープンビデオゲームや、ソースコードが公開され、研究に合わせて修正できるオープンソースゲームを見つけ、利用することができます。
-                </p>
-                <p class="text-center" style="padding-top: 0;">
-                    <nuxt-link
-                        to="/game"
-                        class="hover-pointer"
-                        tag="img" 
-                        v-bind:src="gameBtnSrc"
-                        style="height: 48px;"
-                        @mouseover.native="gameBtnSrc = gameBtnSrc1"
-                        @mouseleave.native="gameBtnSrc = gameBtnSrc0"
-                    ></nuxt-link>
-                </p>
-
-                <h3 class="text-center">評価実験を手軽に正しく行える</h3>
-                <p>
-                    ゲームを用いた体験やデバイスの評価実験を行う際に有益な録画機能や、アンケートを見つけ、利用することができます。
-                </p>
-                <p class="text-center" style="padding-top: 0;">
-                    <nuxt-link
-                        to="/tool"
-                        class="hover-pointer"
-                        tag="img" 
-                        v-bind:src="toolBtnSrc"
-                        style="height: 48px;"
-                        @mouseover.native="toolBtnSrc = toolBtnSrc1"
-                        @mouseleave.native="toolBtnSrc = toolBtnSrc0"
-                    ></nuxt-link>
-                </p>
-
-                <h3 class="text-center">ゲーム開発・ゲーム研究に有益な情報を取得できる</h3>
-                <p>
-                    ゲーム開発をする上でためになる情報や、ゲーム研究をする上で抑えておくべきポイントを知ることができます。
-                </p>
-                <p class="text-center" style="padding-top: 0;">
-                    <nuxt-link
-                        to="/article"
-                        class="hover-pointer"
-                        tag="img" 
-                        v-bind:src="articleBtnSrc"
-                        style="height: 48px;"
-                        @mouseover.native="articleBtnSrc = articleBtnSrc1"
-                        @mouseleave.native="articleBtnSrc = articleBtnSrc0"
-                    ></nuxt-link>
-                </p>
+                <el-row :gutter="24">
+                    <el-col :span="8">
+                        <div class="text-center">
+                            <img style="width: 80%;" v-bind:src="require('@/assets/image/logo/can1.png')" />
+                        </div>
+                        <h3 class="text-center" style="margin-top: 24px;">ゲームを見つけ、<br />利用できる</h3>
+                        <p style="margin-top: 24px;">
+                            研究で利用されることを前提に、作成されたオープンビデオゲームや、ソースコードが公開され、研究に合わせて修正できるオープンソースゲームを見つけ、利用することができます。
+                        </p>
+                        <button class="btn-page">
+                            <span class="text">Game</span>
+                        </button>
+                    </el-col>
+                    <el-col :span="8">
+                        <div class="text-center">
+                            <img style="width: 80%;" v-bind:src="require('@/assets/image/logo/can2.png')" />
+                        </div>
+                        <h3 class="text-center" style="margin-top: 24px;">評価実験を手軽に<br />正しく行える</h3>
+                        <p style="margin-top: 24px;">
+                            ゲームを用いた体験やデバイスの評価実験を行う際に有益な録画機能や、アンケートを見つけ、利用することができます。
+                        </p>
+                        <button class="btn-page">
+                            <span class="text">Tool</span>
+                        </button>
+                    </el-col>
+                    <el-col :span="8">
+                        <div class="text-center">
+                            <img style="width: 80%;" v-bind:src="require('@/assets/image/logo/can3.png')" />
+                        </div>
+                        <h3 class="text-center" style="margin-top: 24px;">ゲーム開発・ゲーム研究に<br />有益な情報を取得できる</h3>
+                        <p style="margin-top: 24px;">
+                            ゲーム開発をする上でためになる情報や、ゲーム研究をする上で抑えておくべきポイントを知ることができます。
+                        </p>
+                        <button class="btn-page">
+                            <span class="text">Article</span>
+                        </button>
+                    </el-col>
+                </el-row>
             </div>
         </section>
 

@@ -1,3 +1,6 @@
+require('dotenv').config();
+const { apiKey, authDomain, databaseURL, projectId, storageBucket, messagingSenderId } = process.env;
+
 export default {
   mode: 'universal',
   srcDir: 'app',
@@ -5,6 +8,7 @@ export default {
   target: 'static',
   router: {
     base: '/info/'
+    // middleware: 'auth'
   },
 
   generate: {
@@ -31,12 +35,14 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    'element-ui/lib/theme-chalk/index.css'
+    '@/assets/css/element-ui.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '@/plugins/element-ui'
+    '@/plugins/element-ui',
+    '@/plugins/firebase.js',
+    '@/plugins/firebase.auth.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -52,6 +58,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/dotenv'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -63,5 +70,23 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: [/^element-ui/],
+  },
+
+  env: {
+    apiKey,
+    authDomain,
+    databaseURL,
+    projectId,
+    storageBucket,
+    messagingSenderId
   }
+  // dotenvよりナウい？
+  // privateRuntimeConfig: {
+  //   apiKey: process.env.apiKey,
+  //   authDomain: process.env.authDomain,
+  //   databaseURL: process.env.databaseURL,
+  //   projectId: process.env.projectId,
+  //   storageBucket: process.env.storageBucket,
+  //   messagingSenderId: process.env.messagingSenderId
+  // }
 }

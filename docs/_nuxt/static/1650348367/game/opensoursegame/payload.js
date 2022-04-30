@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/game/opensoursegame", (function(a,b){return {data:[{game:[{name:"アクション",img:a,to:b},{name:"スポーツ",img:a,to:b},{name:"レース\u002Fドライビング",img:a,to:b},{name:"パズル",img:a,to:b},{name:"シューティング",img:a,to:b},{name:"プラットフォーム",img:a,to:b},{name:"格闘",img:a,to:b},{name:"その他",img:a,to:b}]}],fetch:{},mutations:void 0}}("no_image.png","")));

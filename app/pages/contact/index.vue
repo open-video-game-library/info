@@ -15,6 +15,9 @@
                 <p>
                     オープンビデオゲームライブラリに興味を持っていただきありがとうございます。今後、研究者にとってより良いものに改良していくために、ご意見・ご要望をお聞かせください！共同研究、依頼などについてのご連絡も承っております。
                 </p>
+
+                <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScpDBuQV0ca-PTrxrzm4QniH_u5_wF-3SGEHx1FT3SVJGbpqg/viewform?embedded=true" width="640" height="677" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe> -->
+
                 <p style="color: red;">{{ error_msg }}</p>
                 
                 <el-form ref="form" :model="form" label-width="120px"
@@ -39,7 +42,7 @@
                 </el-form>
             </div>
         </section>
-      </section>
+    </section>
 </template>
 
 <script>
@@ -66,7 +69,7 @@ export default {
         onSubmit() {
             if (this.form.name && this.form.email && this.form.message) {
                 const submitParams = new FormData()
-                const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/'
+                const CORS_PROXY = 'https://cors-anywhere-keitalab.herokuapp.com/'
                 const GOOGLE_FORM_ACTION = this.formInfo.action
                 Object.keys(this.form).forEach((key) => {
                     submitParams.append(this.formInfo[key], this.form[key])
@@ -75,7 +78,7 @@ export default {
                 this.$axios
                     .post(CORS_PROXY + GOOGLE_FORM_ACTION, submitParams)
                     .then(() => {
-                        error_msg = ''
+                        this.error_msg = ''
                         this.$router.push({
                             path: 'thanks',
                             query: {

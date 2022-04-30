@@ -11,7 +11,7 @@
 <script>
 import TheHeader from '~/components/TheHeader.vue'
 import TheFooter from '~/components/TheFooter.vue'
-import '@/assets/common.css'
+import '@/assets/css/common.scss'
 
 export default {
     components: {
