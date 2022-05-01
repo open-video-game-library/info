@@ -1,0 +1,185 @@
+{
+    "openvideogame": [
+        {
+            "name": "Hunter-Chameleon",
+            "desc": "",
+            "img": "openvideogame/chameleon.png",
+            "url": "openvideogame/hunter_chameleon"
+        },
+        {
+            "name": "Escape fish",
+            "desc": "",
+            "img": "openvideogame/iwashi.png",
+            "url": "openvideogame/escape_fish"
+        },
+        {
+            "name": "Sliding peuguin",
+            "desc": "",
+            "img": "openvideogame/penguin.png",
+            "url": "openvideogame/sliding_penguin"
+        },
+        {
+            "name": "Minimum tennis",
+            "desc": "",
+            "img": "openvideogame/tennis.png",
+            "url": "openvideogame/minimum_tennis"
+        },
+        {
+            "name": "Open FPS",
+            "desc": "",
+            "img": "openvideogame/fps.png",
+            "url": "openvideogame/open_fps"
+        }
+    ],
+    "opensoursegame": [
+        {
+            "name": "Google Research Football",
+            "genre": "sports",
+            "desc": "Googleが開発した強化学習向けの3Dサッカーゲーム。pythonで動作し、コードを書き換えることでエージェントの動きを学習させることが出来る。",
+            "img": "opensoursegame/google_football.png",
+            "url": "https://github.com/google-research/football/"
+        },
+        {
+            "name": "東方弾幕風v0.12m",
+            "genre": "shooting",
+            "desc": "『東方』シリーズ風のシューティングゲームを作成できるシミュレーター。",
+            "img": "opensoursegame/touhougc.jpeg",
+            "url": "https://touhougc.web.fc2.com/products/th_dnh.html"
+        },
+        {
+            "name": "アクションゲーム　ツクールMV",
+            "genre": "action",
+            "desc": "アクションゲーム開発のゲームエンジン。直感的に操作出来、コードを書かずに編集可能。",
+            "img": "opensoursegame/tsukurumv.jpeg",
+            "url": "https://rpgmakerofficial.com/product/act/"
+        },
+        {
+            "name": "機装猟兵ガンハウンド",
+            "genre": "shooting",
+            "desc": "2008年に発売された2Dアクション、シューティングゲームがオープンソース化されたもの。横スクロールのステージにて、ジャンプや兵器を駆使して敵の攻撃を避けながら戦う。敵データやSEなどのゲーム素材の他、作成ツールである『gxLib』を使用することが出来る。",
+            "img": "opensoursegame/garuru.jpeg",
+            "url": "http://www.garuru.co.jp/lib/"
+        },
+        {
+            "name": "Amnesia: The Dark Descent",
+            "genre": "action",
+            "desc": "城にとらわれた一人称視点のプレイヤーが追いかけてくる敵から逃げる、所謂『逃げゲー』のホラーゲーム。プレイヤーは攻撃手段を持たず、逃げることでしか敵キャラクターの対処をすることが出来ない。プレイヤーは暗いところにいたり恐ろしいものを見ると正気度が減少してしまうので、光源を確保して城からの脱出を目指す。続編と3作目までがGPLv3ライセンスによりGitHubで公開されている。",
+            "img": "opensoursegame/amnesia.jpeg",
+            "url": "https://github.com/FrictionalGames/AmnesiaTheDarkDescent"
+        },
+        {
+            "name": "SuperTux",
+            "genre": "platform",
+            "desc": "スーパーマリオブラザーズに似た横スクロールアクションゲーム。『Tux』というペンギンが主人公。アドオンによって機能を追加することも出来る。ステージエディット機能も存在する。ジャンプの挙動は不安定。",
+            "img": "opensoursegame/supertux.png",
+            "url": "https://www.supertux.org/"
+        },
+        {
+            "name": "Open Sudoku",
+            "genre": "puzzle",
+            "desc": "難易度別に400種類の数独をプレイできるオープンソースのパズルゲーム。ランダムに生成するパズルを追加でインポートをすることが出来る。",
+            "img": "opensoursegame/opensudoku.webp",
+            "url": "https://opensudoku.moire.org/"
+        },
+        {
+            "name": "FightingICE",
+            "genre": "fighting",
+            "desc": "",
+            "img": "opensoursegame/FightingICE.jpeg",
+            "url": "https://www.ice.ci.ritsumei.ac.jp/~ftgaic/"
+        },
+        {
+            "name": "Torcs",
+            "genre": "driving",
+            "desc": "",
+            "img": "opensoursegame/torcs.png",
+            "url": "http://torcs.sourceforge.net/index.php"
+        },
+        {
+            "name": "Tux Racer",
+            "genre": "driving",
+            "desc": "",
+            "img": "opensoursegame/tuxracer.jpeg",
+            "url": "http://tuxracer.sourceforge.net/"
+        },
+        {
+            "name": "SuperTuxKart",
+            "genre": "driving",
+            "desc": "",
+            "img": "opensoursegame/supertuxkart.jpeg",
+            "url": "https://supertuxkart.net/Main_Page"
+        },
+        {
+            "name": "VDrift",
+            "genre": "driving",
+            "desc": "",
+            "img": "opensoursegame/vdrift.jpeg",
+            "url": "https://vdrift.net/"
+        },
+        {
+            "name": "Minetest",
+            "genre": "other",
+            "desc": "",
+            "img": "opensoursegame/minetest.jpeg",
+            "url": "https://www.minetest.net/"
+        },
+        {
+            "name": "The Arcade Learning Environment",
+            "genre": "other",
+            "desc": "",
+            "img": "opensoursegame/ale.gif",
+            "url": "https://github.com/mgbellemare/Arcade-Learning-Environment"
+        },
+        {
+            "name": "GPSshogi",
+            "genre": "other",
+            "desc": "",
+            "img": "opensoursegame/gpsshogi.png",
+            "url": "https://gps.tanaka.ecc.u-tokyo.ac.jp/gpsshogi/"
+        },
+        {
+            "name": "OpenAI Gym",
+            "genre": "other",
+            "desc": "",
+            "img": "opensoursegame/gym.jpeg",
+            "url": "https://gym.openai.com/"
+        },
+        {
+            "name": "Procgen Benchmark",
+            "genre": "other",
+            "desc": "",
+            "img": "opensoursegame/procgen_benchmark.jpeg",
+            "url": "https://openai.com/blog/procgen-benchmark/"
+        },
+        {
+            "name": "Pong Game",
+            "genre": "sports",
+            "desc": "",
+            "img": "opensoursegame/pong.png",
+            "url": "https://www.ponggame.org/"
+        }
+    ],
+    "browsergame": [
+        {
+            "name": "Play DOS Games",
+            "genre": "",
+            "desc": "",
+            "img": "opensoursegame/play_dos_games.png",
+            "url": "https://www.playdosgames.com/all-games-list/"
+        },
+        {
+            "name": "Crazy Games",
+            "genre": "",
+            "desc": "",
+            "img": "opensoursegame/crazygames.png",
+            "url": "https://www.crazygames.com/"
+        },
+        {
+            "name": "Spaceship Maze",
+            "genre": "",
+            "desc": "",
+            "img": "opensoursegame/toytheater_maze.png",
+            "url": "https://toytheater.com/maze/"
+        }
+    ]
+}

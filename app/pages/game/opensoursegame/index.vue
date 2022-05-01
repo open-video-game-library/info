@@ -13,15 +13,117 @@
 
         <section class="content-wrapper">
             <div class="content-container">
-                <p class="text-center">このページでは、コードが公開されているオープンソースのゲームを紹介します。研究に合ったゲームを探してみましょう。</p>
-                <h2 class="text-center">ゲームジャンル</h2>
+                <h2 class="text-center page-subheading">ゲーム一覧</h2>
+                <p class="text-center page-subdesc">このページでは、コードが公開されているオープンソースのゲームを紹介します。研究に合ったゲームを探してみましょう。</p>
+
+                <h3 class="text-center page-subsubheading">スポーツ</h3>
                 <el-row :gutter="30">
-                    <el-col :span="12" v-for="game in games" :key="game.title">
-                        <PageCard
-                            :title="game.title"
+                    <el-col :span="8" v-for="game in opensoursegame" :key="game.name">
+                        <SiteCard
+                            v-if="game.genre==='sports'"
+                            style="margin-bottom: 30px;"
+                            :name="game.name"
+                            :desc="game.desc"
                             :img="game.img"
-                            :to="game.to"
-                            style="margin-bottom: 24px;"
+                            :url="game.url"
+                        />
+                    </el-col>
+                </el-row>
+
+                <h3 class="text-center page-subsubheading">シューティング</h3>
+                <el-row :gutter="30">
+                    <el-col :span="8" v-for="game in opensoursegame" :key="game.name">
+                        <SiteCard
+                            v-if="game.genre==='shooting'"
+                            style="margin-bottom: 30px;"
+                            :name="game.name"
+                            :desc="game.desc"
+                            :img="game.img"
+                            :url="game.url"
+                        />
+                    </el-col>
+                </el-row>
+
+                <h3 class="text-center page-subsubheading">プラットフォーム</h3>
+                <el-row :gutter="30">
+                    <el-col :span="8" v-for="game in opensoursegame" :key="game.name">
+                        <SiteCard
+                            v-if="game.genre==='platform'"
+                            style="margin-bottom: 30px;"
+                            :name="game.name"
+                            :desc="game.desc"
+                            :img="game.img"
+                            :url="game.url"
+                        />
+                    </el-col>
+                </el-row>
+
+                <h3 class="text-center page-subsubheading">レース/ドライビング</h3>
+                <el-row :gutter="30">
+                    <el-col :span="8" v-for="game in opensoursegame" :key="game.name">
+                        <SiteCard
+                            v-if="game.genre==='driving'"
+                            style="margin-bottom: 30px;"
+                            :name="game.name"
+                            :desc="game.desc"
+                            :img="game.img"
+                            :url="game.url"
+                        />
+                    </el-col>
+                </el-row>
+
+                <h3 class="text-center page-subsubheading">アクション</h3>
+                <el-row :gutter="30">
+                    <el-col :span="8" v-for="game in opensoursegame" :key="game.name">
+                        <SiteCard
+                            v-if="game.genre==='action'"
+                            style="margin-bottom: 30px;"
+                            :name="game.name"
+                            :desc="game.desc"
+                            :img="game.img"
+                            :url="game.url"
+                        />
+                    </el-col>
+                </el-row>
+
+                <h3 class="text-center page-subsubheading">格闘</h3>
+                <el-row :gutter="30">
+                    <el-col :span="8" v-for="game in opensoursegame" :key="game.name">
+                        <SiteCard
+                            v-if="game.genre==='fighting'"
+                            style="margin-bottom: 30px;"
+                            :name="game.name"
+                            :desc="game.desc"
+                            :img="game.img"
+                            :url="game.url"
+                        />
+                    </el-col>
+                </el-row>
+
+                <h3 class="text-center page-subsubheading">パズル</h3>
+                <el-row :gutter="30">
+                    <el-col :span="8" v-for="game in opensoursegame" :key="game.name">
+                        <SiteCard
+                            v-if="game.genre==='puzzle'"
+                            style="margin-bottom: 30px;"
+                            :name="game.name"
+                            :desc="game.desc"
+                            :img="game.img"
+                            :url="game.url"
+                        />
+                    </el-col>
+                </el-row>
+
+                <h3 class="text-center page-subsubheading">その他</h3>
+                <el-row :gutter="30">
+                    <el-col :span="8" v-for="game in opensoursegame" :key="game.name">
+                        <SiteCard
+                            v-if="game.genre==='other'"
+                            style="margin-bottom: 30px;"
+                            :name="game.name"
+                            :desc="game.desc"
+                            :img="game.img"
+                            :url="game.url"
                         />
                     </el-col>
                 </el-row>
@@ -31,63 +133,20 @@
 </template>
 
 <script>
-import PageCard from '~/components/PageCard.vue'
+import SiteCard from '~/components/SiteCard.vue'
+import games from '@/assets/json/games.json'
 
 export default {
     components: {
-        PageCard
+        SiteCard
     },
-    asyncData() {
+    asyncData({ $axios }) {
         return {
-            games: [
-                {
-                    title: "アクション",
-                    img: "opensoursegame/action.png",
-                    to: "opensoursegame/action"
-                },
-                {
-                    title: "スポーツ",
-                    img: "opensoursegame/sports.png",
-                    to: "opensoursegame/sports"
-                },
-                {
-                    title: "レース/ドライビング",
-                    img: "opensoursegame/racing.png",
-                    to: "opensoursegame/racing"
-                },
-                {
-                    title: "パズル",
-                    img: "opensoursegame/puzzle.png",
-                    to: "opensoursegame/puzzle"
-                },
-                {
-                    title: "シューティング",
-                    img: "opensoursegame/shooting.png",
-                    to: "opensoursegame/shooting"
-                },
-                {
-                    title: "プラットフォーム",
-                    img: "opensoursegame/platform.png",
-                    to: "opensoursegame/platform"
-                },
-                {
-                    title: "格闘",
-                    img: "opensoursegame/fighting.png",
-                    to: "opensoursegame/fighting"
-                },
-                {
-                    title: "その他",
-                    img: "opensoursegame/other.png",
-                    to: "opensoursegame/other"
-                }
-            ]
+            opensoursegame: games.opensoursegame
         }
     }
 }
 </script>
 
 <style scoped>
-.el-card {
-    margin: 20px 0;
-}
 </style>
