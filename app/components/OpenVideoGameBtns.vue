@@ -1,27 +1,22 @@
 <template>
-    <el-row type="flex" justify="space-around">
-        <el-col :span="12" class="text-center">
-            <a :href="url_download" target="_blank" rel="noopener noreferrer">
-                <button @click="toDownload">
-                    <span>
-                        <span class="material-icons">file_download</span>
-                        Download
-                    </span>
-                </button>
-            </a>
-        </el-col>
-
-        <el-col :span="12" class="text-center">
-            <a :href="url_code" target="_blank" rel="noopener noreferrer">
-                <button @click="toCode">
-                    <span>
-                        <span class="material-icons">code</span>
-                        Sourse code
-                    </span>
-                </button>
-            </a>
-        </el-col>
-    </el-row>
+    <div>
+        <a :href="url_download" target="_blank" rel="noopener noreferrer" style="margin-right: 40px;">
+            <button @click="toDownload" class="color-green">
+                <span>
+                    <span class="material-icons">file_download</span>
+                    Download
+                </span>
+            </button>
+        </a>
+        <a :href="url_code" target="_blank" rel="noopener noreferrer">
+            <button @click="toCode">
+                <span>
+                    <span class="material-icons">code</span>
+                    Sourse code
+                </span>
+            </button>
+        </a>
+    </div>
 </template>
 
 <script>
@@ -60,6 +55,7 @@ button {
     color: ghostwhite;
     overflow: hidden;
 }
+.color-green { background: linear-gradient(to right, #4AC44C, #4D9453); }
 button svg {
     width: 1.2em;
     height: 1.2em;
@@ -96,5 +92,4 @@ button:hover::before {
 button:active {
     transform: scale(0.95);
 }
-
 </style>
