@@ -20,20 +20,11 @@
                 <div class="unity-wrapper text-center">
                     <img width="960" v-bind:src="require('@/assets/image/thumbnail/openvideogame/fps.png')" />
                 </div>
-                <div class="dl-btns">
-                    <div class="btn-icon">
-                        <a href="" style="background-color: #4AC44C;">
-                            <span class="material-icons">file_download</span>
-                            <span>Download</span>
-                        </a>
-                    </div>
-                    <div class="btn-icon">
-                        <a href="" class="btn-icon" style="background-color: white; color: black;">
-                            <span class="material-icons">code</span>
-                            <span>Sourse code</span>
-                        </a>
-                    </div>
-                </div>
+                
+                <OpenVideoGameBtns
+                    :url_download="url_download"
+                    :url_code="url_code"
+                />
             </div>
         </section>
 
@@ -101,6 +92,19 @@
 </template>
 
 <script>
+import OpenVideoGameBtns from '~/components/OpenVideoGameBtns.vue'
+
+export default {
+    components: {
+        OpenVideoGameBtns
+    },
+    asyncData() {
+        return {
+            url_download: "",
+            url_code: ""
+        }
+    }
+}
 </script>
 
 <style scoped>

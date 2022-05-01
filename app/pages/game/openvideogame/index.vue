@@ -13,12 +13,12 @@
 
         <section class="content-wrapper">
             <div class="content-container">
-                <h2 class="text-center">ガイドライン</h2>
-                <p class="text-center">このガイドラインでは、オープンビデオゲームを研究にご活用いただく際のルールやFAQなどについて、ご説明いたします。</p>
-                <h3 class="text-center">ご利用OK/NG例</h3>
-                <el-row :gutter="30">
-                    <el-col :span="24">
-                        <h4 class="text-center">OK</h4>
+                <h2 class="text-center page-subheading">ガイドライン</h2>
+                <p class="text-center page-subdesc">このガイドラインでは、オープンビデオゲームを研究にご活用いただく際のルールやFAQなどについて、ご説明いたします。</p>
+                <h3 class="text-center mb-30">ご利用OK/NG例</h3>
+                <el-row class="mb-60" :gutter="30">
+                    <el-col class="mb-30" :span="24">
+                        <h4 class="text-center mb-15">OK</h4>
                         <el-card class="el-card">
                             <p class="text-center">営利を目的としない以下のような利用</p>
                             <el-card class="el-card">
@@ -40,14 +40,14 @@
                     </el-col>
 
                     <el-col :span="24">
-                        <h4 class="text-center">NG</h4>
+                        <h4 class="text-center mb-15">NG</h4>
                         <el-card class="el-card">
                             <p class="text-center">営業を目的とする利用</p>
                         </el-card>
                     </el-col>
                 </el-row>
 
-                <h3 class="text-center" style="margin: 60px 0 20px;">研究利用時の推奨事項</h3>
+                <h3 class="text-center mb-30">研究利用時の推奨事項</h3>
                 <el-row :gutter="30">
                     <el-col :span="24">
                         <el-card class="el-card">
@@ -150,8 +150,5 @@ export default {
 }
 </script>
 
-<style scoped>
-.el-card {
-    margin: 20px 0;
-}
+<style lang="scss" scoped>
 </style>
