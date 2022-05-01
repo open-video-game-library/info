@@ -140,7 +140,7 @@ export default {
     components: {
         SiteCard
     },
-    asyncData({ $axios }) {
+    asyncData() {
         return {
             opensoursegame: games.opensoursegame
         }

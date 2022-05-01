@@ -35,7 +35,7 @@
 
         <section class="content-wrapper bg-white">
             <div class="content-container">
-                <h3 class="text-center">ルール</h3>
+                <h3 class="text-center page-subheading">ルール</h3>
                 <p>
                     制限時間内に、できるだけ多くのサカナを捕ってゴールを目指しましょう。<br />
                     ステージはツルツル滑るので、スピードを出し過ぎずに調整しながら進んでください。<br />
@@ -47,7 +47,7 @@
 
         <section class="content-wrapper">
             <div class="content-container">
-                <h3 class="text-center">操作方法</h3>
+                <h3 class="text-center page-subheading">操作方法</h3>
                 <p>
                     WASD or 左右上下キー→ 移動方向<br />
                     スペース → 向いている方向に加速
@@ -57,7 +57,7 @@
 
         <section class="content-wrapper bg-white">
             <div class="content-container">
-                <h3 class="text-center">パラメータ</h3>
+                <h3 class="text-center page-subheading">パラメータ</h3>
                 <el-row :gutter="30">
                     <el-col :span="12">
                         <h4>調整可能パラメータ</h4>

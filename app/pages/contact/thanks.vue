@@ -12,7 +12,7 @@
 
         <section class="content-wrapper">
             <div class="content-container">
-                <p>ご連絡ありがとうございます。以下の内容で承りました。</p>
+                <p class="page-subheading">ご連絡ありがとうございます。以下の内容で承りました。</p>
                 <div class="form-elem">
                     <span class="form-title text-right">お名前：</span>
                     <span class="form-ans text-left">{{ this.$route.query.name }}</span>

@@ -12,16 +12,16 @@
 
         <section class="content-wrapper">
             <div class="content-container">
-                <p>
+                <p class="page-subdesc">
                     オープンビデオゲームライブラリに興味を持っていただきありがとうございます。今後、研究者にとってより良いものに改良していくために、ご意見・ご要望をお聞かせください！共同研究、依頼などについてのご連絡も承っております。
                 </p>
 
                 <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScpDBuQV0ca-PTrxrzm4QniH_u5_wF-3SGEHx1FT3SVJGbpqg/viewform?embedded=true" width="640" height="677" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe> -->
 
-                <p style="color: red;">{{ error_msg }}</p>
+                <p style="color: red;" class="page-subsubdesc">{{ error_msg }}</p>
                 
                 <el-form ref="form" :model="form" label-width="120px"
-                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScpDBuQV0ca-PTrxrzm4QniH_u5_wF-3SGEHx1FT3SVJGbpqg/formResponse">
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScpDBuQV0ca-PTrxrzm4QniH_u5_wF-3SGEHx1FT3SVJGbpqg/formResponse">
                     <el-form-item label="お名前">
                         <el-input v-model="form.name"
                             placeholder="山田 太郎"
@@ -37,7 +37,7 @@
                             placeholder="オープンビデオゲーム楽しい！"></el-input>
                     </el-form-item>
                     <el-form-item>
-                        <el-button type="primary" @click="onSubmit">送信</el-button>
+                        <el-button type="primary" @click="onSubmit" :loading="isSending">送信</el-button>
                     </el-form-item>
                 </el-form>
             </div>
@@ -62,12 +62,14 @@ export default {
                 email: 'entry.1555803700',
                 message: 'entry.752954745',
             },
-            error_msg: ''
+            error_msg: '',
+            isSending: false
         }
     },
     methods: {
         onSubmit() {
             if (this.form.name && this.form.email && this.form.message) {
+                this.isSending = true
                 const submitParams = new FormData()
                 const CORS_PROXY = 'https://cors-anywhere-keitalab.herokuapp.com/'
                 const GOOGLE_FORM_ACTION = this.formInfo.action
@@ -90,8 +92,10 @@ export default {
                     })
                     .catch((e) => {
                         console.log(e)
-                        error_msg = '送信中にエラーが発生しました。恐れ入りますが、時間をおいて再度送信するか、TwitterのDMに連絡をいただけると幸いです。'
+                        this.error_msg = '送信中にエラーが発生しました。恐れ入りますが、時間をおいて再度送信するか、TwitterのDMに連絡をいただけると幸いです。'
                     })
+            } else {
+                this.error_msg = '全項目入力してください。'
             }
         }
     }

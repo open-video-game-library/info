@@ -35,7 +35,7 @@
 
         <section class="content-wrapper bg-white">
             <div class="content-container">
-                <h3 class="text-center">ルール</h3>
+                <h3 class="text-center page-subheading">ルール</h3>
                 <p>
                     ボールの左右への打ち分けと、4種類のショットを駆使して、対戦相手の意表の突く場所へボールを打ち、得点しましょう。ゲームが始まる前に設定したゲーム数を先に勝ち取った方が勝者となります。<br />
                     基本的なルールは実際のテニスと同じで、ボールがネットを越えなかったり、コートの外へと落ちたり、ボールを2回以上バウンドさせてしまうと失点になります。<br />
@@ -46,7 +46,7 @@
 
         <section class="content-wrapper">
             <div class="content-container">
-                <h3 class="text-center">操作方法</h3>
+                <h3 class="text-center page-subheading">操作方法</h3>
                 <p>
                     キーボード<br />
                     WASD → プレイヤの移動<br />
@@ -61,7 +61,7 @@
 
         <section class="content-wrapper bg-white">
             <div class="content-container">
-                <h3 class="text-center">パラメータ</h3>
+                <h3 class="text-center page-subheading">パラメータ</h3>
                 <el-row :gutter="30">
                     <el-col :span="12">
                         <h4>調整可能パラメータ</h4>

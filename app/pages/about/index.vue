@@ -32,7 +32,7 @@
 
         <section class="content-wrapper bg-white">
             <div class="content-container">
-                <h2 class="text-center">Open Video Game Libraryでできること</h2>
+                <h2 class="text-center page-subheading">Open Video Game Libraryでできること</h2>
 
                 <el-row :gutter="30">
                     <el-col :span="8">
@@ -101,8 +101,8 @@
 
         <section id="Member" class="content-wrapper">
             <div class="content-container">
-                <h2 class="text-center">メンバー</h2>
-                <p>
+                <h2 class="text-center page-subheading">メンバー</h2>
+                <p class="page-subdesc">
                     明治大学渡邊恵太研究室のメンバーが中心となり運営。さらに、ゲーム開発・研究に関する幅広い知見を有した外部メンバーを迎えプロジェクト推進中。
                 </p>
                 <el-row :gutter="8" style="width: 100%;">
@@ -122,7 +122,7 @@
 
         <section id="Publication" class="content-wrapper bg-white">
             <div class="content-container">
-                <h2 class="text-center">出版</h2>
+                <h2 class="text-center page-subheading">出版</h2>
                 <ul style="list-style: none; padding-left: 0;"
                     v-for="pub in publication"
                     :key="pub.title" >

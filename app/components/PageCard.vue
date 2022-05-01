@@ -1,10 +1,10 @@
 <template>
     <el-card class="card-wrapper" :body-style="{padding: '0px'}" shadow="hover">
-        <nuxt-link :to="to" class="hover-pointer full-link"></nuxt-link>
+        <nuxt-link :to="url" class="hover-pointer full-link"></nuxt-link>
         <img v-if="img===''" v-bind:src="require('@/assets/image/thumbnail/no_image.png')" class="image" />
         <img v-else v-bind:src="require(`@/assets/image/thumbnail/${img}`)" class="image" />
         <div class="hover-elems">
-            <h2 class="title text-center">{{ title }}</h2>
+            <h2 class="title text-center">{{ name }}</h2>
         </div>
     </el-card>
 </template>
@@ -12,9 +12,10 @@
 <script>
 export default {
     props: {
-        title: String,
+        name: String,
+        desc: String,
         img: String,
-        to: String
+        url: String
     }
 }
 </script>

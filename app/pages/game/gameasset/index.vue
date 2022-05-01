@@ -13,15 +13,15 @@
 
         <section class="content-wrapper">
             <div class="content-container">
-                <p class="text-center">このページでは、ゲーム開発に使えるアセットを紹介します。</p>
-                <h2 class="text-center">アセット</h2>
+                <h2 class="text-center page-subheading">アセット一覧</h2>
+                <p class="text-center page-subdesc">このページでは、ゲーム開発に使えるアセットを紹介します。</p>
                 <el-row :gutter="30">
                     <el-col :span="12" v-for="asset in assets" :key="asset.name">
                         <PageCard
                             style="margin-bottom: 30px;"
-                            :title="asset.title"
+                            :name="asset.name"
                             :img="asset.img"
-                            :to="asset.to"
+                            :url="asset.url"
                         />
                     </el-col>
                 </el-row>
@@ -41,40 +41,40 @@ export default {
         return {
             assets: [
                 {
-                    title: "開発言語/フレームワーク",
+                    name: "開発言語/フレームワーク",
                     img: "asset/Genre/development.png",
-                    to: "gameasset/development"
+                    url: "gameasset/development"
                 },
                 {
-                    title: "3Dモデル",
+                    name: "3Dモデル",
                     img: "asset/Genre/3dmodel.png",
-                    to: "gameasset/3dmodel"
+                    url: "gameasset/3dmodel"
                 },
                 {
-                    title: "サウンド",
+                    name: "サウンド",
                     img: "asset/Genre/sound.png",
-                    to: "gameasset/sound"
+                    url: "gameasset/sound"
                 },
-                {
-                    title: "エフェクト",
-                    img: "asset/Genre/effect.png",
-                    to: "gameasset/effect"
-                },
-                {
-                    title: "UI/インタフェース",
-                    img: "asset/Genre/ui.png",
-                    to: "gameasset/ui"
-                },
-                {
-                    title: "教育/学習",
-                    img: "asset/Genre/education.png",
-                    to: "gameasset/education"
-                },
-                {
-                    title: "その他",
-                    img: "",
-                    to: "gameasset/other"
-                }
+                // {
+                //     title: "エフェクト",
+                //     img: "asset/Genre/effect.png",
+                //     to: "gameasset/effect"
+                // },
+                // {
+                //     title: "UI/インタフェース",
+                //     img: "asset/Genre/ui.png",
+                //     to: "gameasset/ui"
+                // },
+                // {
+                //     title: "教育/学習",
+                //     img: "asset/Genre/education.png",
+                //     to: "gameasset/education"
+                // },
+                // {
+                //     title: "その他",
+                //     img: "",
+                //     to: "gameasset/other"
+                // }
             ]
         }
     }

@@ -30,7 +30,7 @@
 
         <section class="content-wrapper bg-white">
             <div class="content-container">
-                <h3 class="text-center">ルール</h3>
+                <h3 class="text-center page-subheading">ルール</h3>
                 <div>
                     <h4>シューティングレンジ</h4>
                     画面上部の制限時間がなくなる前に全てのターゲットを倒しきりましょう
@@ -43,7 +43,7 @@
 
         <section class="content-wrapper">
             <div class="content-container">
-                <h3 class="text-center">操作方法</h3>
+                <h3 class="text-center page-subheading">操作方法</h3>
                 <p>
                     WASD →移動<br />
                     LShift → ダッシュ<br />
@@ -57,7 +57,7 @@
 
         <section class="content-wrapper bg-white">
             <div class="content-container">
-                <h3 class="text-center">パラメータ</h3>
+                <h3 class="text-center page-subheading">パラメータ</h3>
                 <el-row :gutter="30">
                     <el-col :span="12">
                         <h4>調整可能パラメータ</h4>

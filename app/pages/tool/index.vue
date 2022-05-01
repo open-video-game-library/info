@@ -13,7 +13,7 @@
         <section id="Experiment" class="content-wrapper">
             <div class="content-container">
                 <!-- <h3 class="text-center">ゲーム体験を評価する実験やゲーム開発に役立つツールを紹介します。</h3> -->
-                <h2 class="text-center">評価実験</h2>
+                <h2 class="text-center page-subheading">評価実験</h2>
                 <el-row style="width: 100%;">
                     <el-col :span="8" v-for="exp in experiment" :key="exp.name">
                         <SiteCard
@@ -30,7 +30,7 @@
 
         <section id="Development" class="content-wrapper bg-white">
             <div class="content-container">
-                <h2 class="text-center">工学的ツール</h2>
+                <h2 class="text-center page-subheading">工学的ツール</h2>
                 <el-row style="width: 100%;">
                     <el-col :span="8" v-for="dev in development" :key="dev.name">
                         <SiteCard

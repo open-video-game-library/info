@@ -17,9 +17,9 @@
                     <el-col :span="12" v-for="gm in game" :key="gm.title">
                         <PageCard
                             style="margin-bottom: 30px;"
-                            :title="gm.title"
+                            :name="gm.name"
                             :img="gm.img"
-                            :to="gm.to"
+                            :url="gm.url"
                         />
                     </el-col>
                 </el-row>
@@ -39,24 +39,24 @@ export default {
         return {
             game: [
                 {
-                    title: 'オープンビデオゲーム',
+                    name: 'オープンビデオゲーム',
                     img: 'Game_openvideogame.gif',
-                    to: 'openvideogame'
+                    url: 'openvideogame'
                 },
                 {
-                    title: 'ブラウザゲーム',
+                    name: 'ブラウザゲーム',
                     img: 'Game_browser.png',
-                    to: 'browsergame'
+                    url: 'browsergame'
                 },
                 {
-                    title: 'オープンソースゲーム',
+                    name: 'オープンソースゲーム',
                     img: 'Game_opensourse.png',
-                    to: 'opensoursegame'
+                    url: 'opensoursegame'
                 },
                 {
-                    title: 'ゲームアセット',
+                    name: 'ゲームアセット',
                     img: 'Game_asset.png',
-                    to: 'gameasset'
+                    url: 'gameasset'
                 },
             ]
         }

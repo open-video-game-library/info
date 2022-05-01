@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/game/gameasset", {data:[{assets:[{name:"開発言語\u002Fフレームワーク",img:"asset\u002FGenre\u002Fdevelopment.png",url:"gameasset\u002Fdevelopment"},{name:"3Dモデル",img:"asset\u002FGenre\u002F3dmodel.png",url:"gameasset\u002F3dmodel"},{name:"サウンド",img:"asset\u002FGenre\u002Fsound.png",url:"gameasset\u002Fsound"}]}],fetch:{},mutations:[]});

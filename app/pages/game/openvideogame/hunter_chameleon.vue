@@ -35,7 +35,7 @@
 
         <section class="content-wrapper bg-white">
             <div class="content-container">
-                <h3 class="text-center">ルール</h3>
+                <h3 class="text-center page-subheading">ルール</h3>
                 <p>
                     制限時間内に、できるだけ多くのハエを捕ってスコアを伸ばしましょう。<br />
                     ハエを捕った位置が、トリガーを引いた照準の位置と近いほど、スコアが大きいです。<br />
@@ -48,7 +48,7 @@
 
         <section class="content-wrapper">
             <div class="content-container">
-                <h3 class="text-center">操作方法</h3>
+                <h3 class="text-center page-subheading">操作方法</h3>
                 <p>
                     左クリック → トリガーを引く<br />
                     マウス移動 or トラックパッドの移動 → 照準の移動
@@ -58,7 +58,7 @@
 
         <section class="content-wrapper bg-white">
             <div class="content-container">
-                <h3 class="text-center">パラメータ</h3>
+                <h3 class="text-center page-subheading">パラメータ</h3>
                 <el-row :gutter="30">
                     <el-col :span="12">
                         <h4>調整可能パラメータ</h4>
