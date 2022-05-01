@@ -43,17 +43,17 @@ export default {
                 {
                     name: "開発言語/フレームワーク",
                     img: "asset/Genre/development.png",
-                    url: "gameasset/development"
+                    url: "/game/gameasset/development"
                 },
                 {
                     name: "3Dモデル",
                     img: "asset/Genre/3dmodel.png",
-                    url: "gameasset/3dmodel"
+                    url: "/game/gameasset/3dmodel"
                 },
                 {
                     name: "サウンド",
                     img: "asset/Genre/sound.png",
-                    url: "gameasset/sound"
+                    url: "/game/gameasset/sound"
                 },
                 // {
                 //     title: "エフェクト",

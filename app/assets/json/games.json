@@ -4,31 +4,31 @@
             "name": "Hunter-Chameleon",
             "desc": "",
             "img": "openvideogame/chameleon.png",
-            "url": "openvideogame/hunter_chameleon"
+            "url": "/game/openvideogame/hunter_chameleon"
         },
         {
             "name": "Escape fish",
             "desc": "",
             "img": "openvideogame/iwashi.png",
-            "url": "openvideogame/escape_fish"
+            "url": "/game/openvideogame/escape_fish"
         },
         {
             "name": "Sliding peuguin",
             "desc": "",
             "img": "openvideogame/penguin.png",
-            "url": "openvideogame/sliding_penguin"
+            "url": "/game/openvideogame/sliding_penguin"
         },
         {
             "name": "Minimum tennis",
             "desc": "",
             "img": "openvideogame/tennis.png",
-            "url": "openvideogame/minimum_tennis"
+            "url": "/game/openvideogame/minimum_tennis"
         },
         {
             "name": "Open FPS",
             "desc": "",
             "img": "openvideogame/fps.png",
-            "url": "openvideogame/open_fps"
+            "url": "/game/openvideogame/open_fps"
         }
     ],
     "opensoursegame": [
