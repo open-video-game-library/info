@@ -34,10 +34,10 @@
                     </el-form-item>
                     <el-form-item label="メッセージ">
                         <el-input type="textarea" v-model="form.message"
-                            placeholder="オープンビデオゲーム楽しい！"></el-input>
+                            placeholder="こういうゲームが欲しい！"></el-input>
                     </el-form-item>
                     <el-form-item>
-                        <el-button type="primary" @click="onSubmit" :loading="isSending">送信</el-button>
+                        <el-button type="primary" @click="onSubmit" :loading="isSending">{{ submit_msg }}</el-button>
                     </el-form-item>
                 </el-form>
             </div>
@@ -63,13 +63,15 @@ export default {
                 message: 'entry.752954745',
             },
             error_msg: '',
-            isSending: false
+            isSending: false,
+            submit_msg: '送信'
         }
     },
     methods: {
         onSubmit() {
             if (this.form.name && this.form.email && this.form.message) {
                 this.isSending = true
+                this.submit_msg = '送信中'
                 const submitParams = new FormData()
                 const CORS_PROXY = 'https://cors-anywhere-keitalab.herokuapp.com/'
                 const GOOGLE_FORM_ACTION = this.formInfo.action

@@ -1,5 +1,6 @@
 <template>
     <el-menu mode="horizontal" :router="true"
+        class="header-wrapper"
         background-color="#04062D"
         text-color="#fff"
         active-text-color="#fff">
@@ -29,6 +30,11 @@
 </template>
 
 <style scoped>
+.header-wrapper {
+    border: none;
+    box-shadow: 0 0 4px #04062D;
+}
+
 .material-icons { font-size: 24px; }
 .e:hover{
     background-color: #fff;
