@@ -42,7 +42,7 @@
                     <el-col :span="24">
                         <h4 class="text-center mb-15">NG</h4>
                         <el-card>
-                            <p class="text-center">営業を目的とする利用</p>
+                            <p class="text-center">営利を目的とする利用</p>
                         </el-card>
                     </el-col>
                 </el-row>
