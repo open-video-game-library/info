@@ -1,6 +1,6 @@
 <template>
     <section class="container">
-        <section class="content-wrapper bg-white">
+        <section class="content-wrapper bg-heading">
             <div class="content-container">
                 <h1 class="page-heading">
                     <span class="material-icons">info</span>
@@ -304,5 +304,12 @@ li {
 	background-image: radial-gradient(#111 30%, transparent 31%), radial-gradient(#111 30%, transparent 31%);
 	background-size: 4px 4px;
 	background-position: 0 0, 2px 2px;
+}
+
+.bg-heading {
+    background-image: url("~@/assets/image/background/heading_about.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center top;
 }
 </style>

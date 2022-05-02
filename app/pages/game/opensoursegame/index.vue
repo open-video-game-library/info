@@ -1,6 +1,6 @@
 <template>
     <section class="container">
-        <section class="content-wrapper bg-white">
+        <section class="content-wrapper bg-heading">
             <div class="content-container">
                 <h1 class="page-heading">
                     <!-- <img class="logo" src="@/assets/image/logo/Game_logo_black.png" /> -->
@@ -149,4 +149,10 @@ export default {
 </script>
 
 <style scoped>
+.bg-heading {
+    background-image: url("~@/assets/image/background/heading_game.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
 </style>
