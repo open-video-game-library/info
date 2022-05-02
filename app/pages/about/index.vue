@@ -1,32 +1,28 @@
 <template>
     <section class="container">
-        <section class="content-wrapper bg-heading">
-            <div class="content-container">
-                <h1 class="page-heading">
-                    <span class="material-icons">info</span>
-                    <span style="font-size: 48px;">About</span>
-                    <span class="sub-headline">このサービスについて</span>
-                </h1>
-            </div>
-        </section>
-
         <section id="Abstract" class="content-wrapper" style="position: relative; color: white;">
-            <!-- <img style="width: 100%;" v-bind:src="require('@/assets/image/background/Abst.png')" /> -->
             <div class="video-wrapper text-center">
                 <video autoplay muted loop playsinline>
                     <source v-bind:src="require('@/assets/image/background/Abst_movie.mp4')" />
                 </video>
             </div>
             <div class="content-container"
-                style="padding-bottom: 120px; position: absolute; left: 0; right: 0; bottom: 0;">
-                <h2 style="margin-bottom: 30px;">
-                    Open Video Game Libraryはゲーム研究を行いやすくし、
-                    <br />ゲーム研究の発展に貢献することを目的としたゲーム研究者ライブラリです。
-                </h2>
-                <p style="margin: 0;">
-                    市販ビデオゲームの編集可能性が低い点や、ゲームを自作する際の開発コスト、他研究との比較のしやすさなどを問題視し、
-                    <br />研究に使いやすいオープンなビデオゲームを提供しています。
-                </p>
+                style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;">
+                <h1 class="page-heading" style="top: 0;">
+                    <span class="material-icons">info</span>
+                    <span style="font-size: 48px;">About</span>
+                    <span class="sub-headline">このサービスについて</span>
+                </h1>
+                <div style="padding-bottom: 120px; position: absolute; bottom: 0;">
+                    <h2 style="margin-bottom: 30px;">
+                        Open Video Game Libraryはゲーム研究を行いやすくし、
+                        <br />ゲーム研究の発展に貢献することを目的としたゲーム研究者ライブラリです。
+                    </h2>
+                    <p style="margin: 0;">
+                        市販ビデオゲームの編集可能性が低い点や、ゲームを自作する際の開発コスト、他研究との比較のしやすさなどを問題視し、
+                        <br />研究に使いやすいオープンなビデオゲームを提供しています。
+                    </p>
+                </div>
             </div>
         </section>
 
