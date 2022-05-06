@@ -41,19 +41,23 @@ a {
 }
 
 .img-wrapper {
-    background-color: #F5F5F5;
+    // background-color: #F5F5F5;
     width: 100%;
     aspect-ratio: 16 / 9;
     border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .image {
         border-radius: 2px;
-        vertical-align: top;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        vertical-align: middle;
+        max-width: 100%;
+        max-height: 100%;
+        // object-fit: cover;
     }
 }
 .desc {
+    margin-top: 5px;
     line-height: 28px;
 }
 </style>
