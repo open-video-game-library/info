@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/game/openvideogame/hunter_chameleon", (function(a){return {data:[{url_download:a,url_code:a}],fetch:{},mutations:[]}}("")));

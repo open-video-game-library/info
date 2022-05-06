@@ -100,7 +100,7 @@ export default {
     },
     asyncData() {
         return {
-            url_download: "",
+            url_download: "https://drive.google.com/drive/folders/1Ns-XUXM8AC3rp9En5hZ_-FkjRgx87qEC",
             url_code: ""
         }
     }

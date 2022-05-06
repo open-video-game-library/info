@@ -92,7 +92,7 @@ export default {
     },
     asyncData() {
         return {
-            url_download: "",
+            url_download: "https://tkystar.itch.io/hunter-chameleon",
             url_code: ""
         }
     }

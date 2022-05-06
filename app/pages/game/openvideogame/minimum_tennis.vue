@@ -102,7 +102,7 @@ export default {
     },
     asyncData() {
         return {
-            url_download: "",
+            url_download: "https://drive.google.com/file/d/1MqepNQJyqSGWYCunM4aZPqPGDHO3xjHs/view",
             url_code: ""
         }
     }

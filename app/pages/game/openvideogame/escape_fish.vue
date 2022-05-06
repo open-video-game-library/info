@@ -17,7 +17,7 @@
                     <span style="font-size: 48px;">Escape fish</span>
                     <span class="sub-headline">エスケープフィッシュ</span>
                 </h2>
-                <div class="unity-wrapper">
+                <div class="unity-wrapper text-center">
                     <iframe
                         src="https://keitalab.github.io/escape_fish/"
                         width="960" height="650"

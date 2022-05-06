@@ -1,21 +1,22 @@
 <template>
     <div>
-        <a :href="url_download" target="_blank" rel="noopener noreferrer" style="margin-right: 40px;">
-            <button @click="toDownload" class="color-green">
+        <!-- <a :href="url_download" target="_blank" rel="noopener noreferrer" style="margin-right: 40px;"> -->
+            <button @click="toDownload"  v-bind:disabled="url_download===''"
+                class="color-green" style="margin-right: 40px;">
                 <span>
                     <span class="material-icons">file_download</span>
                     Download
                 </span>
             </button>
-        </a>
-        <a :href="url_code" target="_blank" rel="noopener noreferrer">
-            <button @click="toCode">
+        <!-- </a> -->
+        <!-- <a class="to-code" :href="url_code" target="_blank" rel="noopener noreferrer"> -->
+            <button @click="toCode" v-bind:disabled="url_code===''">
                 <span>
                     <span class="material-icons">code</span>
                     Sourse code
                 </span>
             </button>
-        </a>
+        <!-- </a> -->
     </div>
 </template>
 
@@ -27,10 +28,12 @@ export default {
     },
     methods: {
         toDownload() {
-            window.location.href = this.url_download
+            // window.location.href = this.url_download
+            window.open(this.url_download, '_blank')
         },
         toCode() {
-            window.location.href = this.url_code
+            // window.location.href = this.url_code
+            window.open(this.url_code, '_blank')
         }
     }
 }
@@ -91,5 +94,9 @@ button:hover::before {
 }
 button:active {
     transform: scale(0.95);
+}
+
+button:disabled {
+    cursor: not-allowed;
 }
 </style>

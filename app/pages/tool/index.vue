@@ -12,38 +12,22 @@
 
         <section id="Experiment" class="content-wrapper">
             <div class="content-container">
-                <!-- <h3 class="text-center">ゲーム体験を評価する実験やゲーム開発に役立つツールを紹介します。</h3> -->
-                <h2 class="text-center page-subheading">評価実験</h2>
-                <el-row style="width: 100%;">
-                    <el-col :span="8" v-for="exp in experiment" :key="exp.name">
+                <h2 class="text-center page-subheading">ツール一覧</h2>
+                <p class="text-center page-subdesc">ゲーム体験を評価する実験やゲーム開発に役立つツールを紹介します。</p>
+                <el-row :gutter="30">
+                    <el-col :span="8" v-for="tool in tools" :key="tool.name">
                         <SiteCard
-                            style="margin-bottom: 24px;"
-                            :name="exp.name"
-                            :desc="exp.desc"
-                            :img="exp.img"
-                            :url="exp.url"
+                            style="margin-bottom: 30px;"
+                            :name="tool.name"
+                            :desc="tool.desc"
+                            :img="tool.img"
+                            :url="tool.url"
                         />
                     </el-col>
                 </el-row>
             </div>
         </section>
 
-        <section id="Development" class="content-wrapper bg-white">
-            <div class="content-container">
-                <h2 class="text-center page-subheading">工学的ツール</h2>
-                <el-row style="width: 100%;">
-                    <el-col :span="8" v-for="dev in development" :key="dev.name">
-                        <SiteCard
-                            style="margin-bottom: 24px;"
-                            :name="dev.name"
-                            :desc="dev.desc"
-                            :img="dev.img"
-                            :url="dev.url"
-                        />
-                    </el-col>
-                </el-row>
-            </div>
-        </section>
     </section>
 </template>
 
@@ -56,15 +40,19 @@ export default {
     },
     asyncData() {
         return {
-            experiment: [
+            tools: [
                 {
                     name: 'Multi View Recorder',
                     desc: 'Multi View RecorderはWeb上で録画と動画の保存ができるツールです。Webカメラを複数台接続し、他視点を同時に録画することができます。',
                     img: 'Tool_multi_view_recorder.png',
                     url: 'https://open-video-game-library.github.io/multi-view-recorder/'
-                }
-            ],
-            development: [
+                },
+                {
+                    name: 'JumpLab',
+                    desc: 'プラットフォームゲーム（ジャンプアクションゲーム）のジャンプ処理やカメラ移動処理にまつわる、諸パラメタを可変にした実験用ソフトウェアです。',
+                    img: 'Tool_jumplab.png',
+                    url: 'https://fukuchi.org/works/jumplab/index.html'
+                },
                 {
                     name: 'Game Controllerizer',
                     desc: 'Game Controllerizerはディジタルゲーム拡張のためのミドルウェアです。多様な機器および情報源を既存ゲームへの入力として扱うことができます。',
