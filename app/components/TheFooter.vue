@@ -34,7 +34,7 @@
             </div>
 
             <div class="text-center" style="margin-top: 40px">
-                <el-button type="primary" class="btn-to-contact">
+                <el-button type="primary" class="btn-to-contact" @click="$router.push('/contact')">
                     <p style="display: flex; align-items: center;">
                         <span class="material-icons">email</span>
                         <span style="margin-left: 4px;">お問い合わせフォームへ</span>

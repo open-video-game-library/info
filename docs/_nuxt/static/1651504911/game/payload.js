@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/game", {data:[{game:[{name:"オープンビデオゲーム",img:"Game_openvideogame.gif",url:"\u002Fgame\u002Fopenvideogame"},{name:"オープンソースゲーム",img:"Game_opensourse.png",url:"\u002Fgame\u002Fopensoursegame"},{name:"ゲームアセット",img:"Game_asset.png",url:"\u002Fgame\u002Fgameasset"},{name:"ブラウザゲーム",img:"Game_browser.png",url:"\u002Fgame\u002Fbrowsergame"}]}],fetch:{},mutations:[]});

@@ -9,7 +9,7 @@
             <img v-if="img==''" v-bind:src="require('@/assets/image/thumbnail/no_image.png')" class="image" />
             <img v-else v-bind:src="require(`@/assets/image/thumbnail/${img}`)" class="image" />
         </div>
-        <div class="scroll-box">
+        <div>
             <h3 style="margin-top: 10px;">{{ name }}</h3>
             <p>{{ desc }}</p>
         </div>
@@ -34,11 +34,7 @@ export default {
     height: 156px;
     border-radius: 2px;
 }
-.scroll-box {
-    /* width: 200px;; */
-    height: 138px;
-    overflow-y: scroll; 
-}
+
 .scroll-box > p {
     color: #555C64;
 }

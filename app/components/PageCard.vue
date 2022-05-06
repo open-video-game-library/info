@@ -4,7 +4,10 @@
         <img v-if="img===''" v-bind:src="require('@/assets/image/thumbnail/no_image.png')" class="image" />
         <img v-else v-bind:src="require(`@/assets/image/thumbnail/${img}`)" class="image" />
         <div class="hover-elems">
-            <h2 class="title text-center">{{ name }}</h2>
+            <h2 class="name text-center"><span>{{ name }}</span></h2>
+            <p class="desc" v-if="desc !== ''">
+                {{ desc }}
+            </p>
         </div>
     </el-card>
 </template>
@@ -21,14 +24,14 @@ export default {
 </script>
 
 
-<style scoped>
+<style lang="scss" scoped>
 .card-wrapper {
     position: relative;
     width: 448px;
     height: 252px;
 }
 .hover-elems {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     position: absolute;
     top: 0;
     left: 0;
@@ -36,15 +39,17 @@ export default {
     bottom: 0;
     opacity: 0;
     z-index: 5;
+    padding: 30px;
 }
-.title {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    line-height: 252px;
+
+.name > span {
+    display: inline-block;
+    border-bottom: 1px black solid;
 }
+.desc {
+    margin-top: 30px;
+}
+
 .image {
     display: block;
     width: 448px;

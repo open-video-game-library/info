@@ -35,7 +35,7 @@
         {
             "name": "Google Research Football",
             "genre": "sports",
-            "desc": "Googleが開発した強化学習向けの3Dサッカーゲーム。pythonで動作し、コードを書き換えることでエージェントの動きを学習させることが出来る。",
+            "desc": "Googleが開発した強化学習向けの3Dサッカーゲーム。pythonで動作し、コードを書き換えることでエージェントの動きを学習させることができる。",
             "img": "opensoursegame/google_football.png",
             "url": "https://github.com/google-research/football/"
         },
@@ -47,16 +47,16 @@
             "url": "https://touhougc.web.fc2.com/products/th_dnh.html"
         },
         {
-            "name": "アクションゲーム　ツクールMV",
+            "name": "アクションゲームツクールMV",
             "genre": "action",
-            "desc": "アクションゲーム開発のゲームエンジン。直感的に操作出来、コードを書かずに編集可能。",
+            "desc": "アクションゲーム開発のゲームエンジン。直感的に操作出来、コードを書かずに編集可能。ただ、あまりにも広い拡張性のため標準的なゲームを作るのが難しいかもしれない。",
             "img": "opensoursegame/tsukurumv.jpeg",
             "url": "https://rpgmakerofficial.com/product/act/"
         },
         {
             "name": "機装猟兵ガンハウンド",
             "genre": "shooting",
-            "desc": "2008年に発売された2Dアクション、シューティングゲームがオープンソース化されたもの。横スクロールのステージにて、ジャンプや兵器を駆使して敵の攻撃を避けながら戦う。敵データやSEなどのゲーム素材の他、作成ツールである『gxLib』を使用することが出来る。",
+            "desc": "2008年に発売された2Dアクション、シューティングゲームがオープンソース化されたもの。横スクロールのステージにて、ジャンプや兵器を駆使して敵の攻撃を避けながら戦う。敵データやSEなどのゲーム素材の他、作成ツールである『gxLib』を使用することができる。",
             "img": "opensoursegame/garuru.jpeg",
             "url": "http://www.garuru.co.jp/lib/"
         },
@@ -84,77 +84,77 @@
         {
             "name": "FightingICE",
             "genre": "fighting",
-            "desc": "",
+            "desc": "FightingICEはComputational Intelligence and Games (CIG)公認の格闘ゲームAIの性能を競う国際大会 Fighting Game AI Competition (FTGAIC)に使用されている2D格闘ゲームです。",
             "img": "opensoursegame/FightingICE.jpeg",
             "url": "https://www.ice.ci.ritsumei.ac.jp/~ftgaic/"
         },
         {
             "name": "Torcs",
             "genre": "driving",
-            "desc": "",
+            "desc": "TORCSはマルチプラットフォームのカーシュミレータです。通常のカーレースゲーム、AIレースゲーム、研究用プラットフォームとして使えます。",
             "img": "opensoursegame/torcs.png",
             "url": "http://torcs.sourceforge.net/index.php"
         },
         {
             "name": "Tux Racer",
             "genre": "driving",
-            "desc": "",
+            "desc": "Tux Racer は、Linux ペンギンの Tux となり、雪に覆われた険しい山々を駆け抜けるゲームです。楽しく簡単にプレイでき、100万回以上ダウンロードされています。",
             "img": "opensoursegame/tuxracer.jpeg",
             "url": "http://tuxracer.sourceforge.net/"
         },
         {
             "name": "SuperTuxKart",
             "genre": "driving",
-            "desc": "",
+            "desc": "SuperTuxKartは、様々なキャラクター、コース、モードが遊べる3Dオープンソースアーケードレースゲームです。",
             "img": "opensoursegame/supertuxkart.jpeg",
             "url": "https://supertuxkart.net/Main_Page"
         },
         {
             "name": "VDrift",
             "genre": "driving",
-            "desc": "",
+            "desc": "VDrift は、ドリフトレースを念頭に置いて作られた、クロスプラットフォームのオープンソース・ドライビングシミュレーションです。",
             "img": "opensoursegame/vdrift.jpeg",
             "url": "https://vdrift.net/"
         },
         {
             "name": "Minetest",
             "genre": "other",
-            "desc": "",
+            "desc": "オープンソースのボクセルゲームエンジンです。用意された多くのゲームのプレイや、ゲームを好みに合わせて改造したり、自分のゲームを作ったり、マルチプレイヤーサーバーで遊んだりすることができます。",
             "img": "opensoursegame/minetest.jpeg",
             "url": "https://www.minetest.net/"
         },
         {
             "name": "The Arcade Learning Environment",
             "genre": "other",
-            "desc": "",
+            "desc": "Arcade Learning Environment (ALE) は、研究者やホビイストがAtari 2600ゲーム用のAIエージェントを開発するためのシンプルなフレームワークです。",
             "img": "opensoursegame/ale.gif",
             "url": "https://github.com/mgbellemare/Arcade-Learning-Environment"
         },
         {
             "name": "GPSshogi",
             "genre": "other",
-            "desc": "",
+            "desc": "GPS将棋は、東京大学大学院総合文化研究科の教員・学生が開催しているゲームプログラミングセミナー（Game Programming Seminar = GPS）のメンバーが中心になって開発が行われているソフトウェアです*1。ゲームプログラミングの研究として開発が行われています。",
             "img": "opensoursegame/gpsshogi.png",
             "url": "https://gps.tanaka.ecc.u-tokyo.ac.jp/gpsshogi/"
         },
         {
             "name": "OpenAI Gym",
             "genre": "other",
-            "desc": "",
+            "desc": "Gymは強化学習アルゴリズムを開発し、比較するためのツールキットです。歩行からポンやピンボールのようなゲームのプレイまで、エージェントに教えることができます。",
             "img": "opensoursegame/gym.jpeg",
             "url": "https://gym.openai.com/"
         },
         {
             "name": "Procgen Benchmark",
             "genre": "other",
-            "desc": "",
+            "desc": "強化学習エージェントが汎用のスキルをどれだけ早く学習できるかを直接測定できる、16種類の手続き型生成環境です。",
             "img": "opensoursegame/procgen_benchmark.jpeg",
             "url": "https://openai.com/blog/procgen-benchmark/"
         },
         {
             "name": "Pong Game",
             "genre": "sports",
-            "desc": "",
+            "desc": "このサイトでは世界的に有名なポンゲームをプレイできます。難易度の変更や、複数人でのネットワーク対戦をすることができます。",
             "img": "opensoursegame/pong.png",
             "url": "https://www.ponggame.org/"
         }
@@ -163,23 +163,44 @@
         {
             "name": "Play DOS Games",
             "genre": "",
-            "desc": "",
-            "img": "opensoursegame/play_dos_games.png",
+            "desc": "昔ながらのDOSゲームをWeb上でプレイすることができます。600以上のゲームが用意されており、カテゴリごとに検索することができます。",
+            "img": "browsergame/play_dos_games.png",
             "url": "https://www.playdosgames.com/all-games-list/"
         },
         {
             "name": "Crazy Games",
             "genre": "",
-            "desc": "",
-            "img": "opensoursegame/crazygames.png",
+            "desc": "CrazyGamesは、ゲーム開発者がゲームを掲載するプラットフォームです。広告が付いている代わりに多くのクオリティの高いゲームを利用することができます。",
+            "img": "browsergame/crazygames.png",
             "url": "https://www.crazygames.com/"
         },
         {
-            "name": "Spaceship Maze",
+            "name": "Toy Theater",
             "genre": "",
-            "desc": "",
-            "img": "opensoursegame/toytheater_maze.png",
+            "desc": "Toy Theaterは小学生向けの教育ゲーム集です。全てフリーでプレイでき、PCやタブレット、モバイルデバイスで動きます。",
+            "img": "browsergame/toytheater_maze.png",
             "url": "https://toytheater.com/maze/"
+        },
+        {
+            "name": "JSPuzzles",
+            "genre": "",
+            "desc": "JSPuzzlesでは多様なジグソーパズルをプレイすることができます。ピースの数は9ピースから200以上まで選択でき、クリアにかかった時間も取得できます。",
+            "img": "browsergame/jspuzzles.jpeg",
+            "url": "https://www.jspuzzles.com/"
+        },
+        {
+            "name": "Sudoku",
+            "genre": "",
+            "desc": "Sudokuは数独に特化したゲームサイトです。4段階の難易度を選択すると、ランダムに問題が出されます。",
+            "img": "browsergame/sudoku.png",
+            "url": "https://www.livesudoku.com/"
+        },
+        {
+            "name": "SolitaireBliss",
+            "genre": "",
+            "desc": "SolitaireBlissではソリティアやトランプゲームをプレイすることができます。ウェア部上のゲームですが、セーブ機能が付いておりロードすると元の位置から再スタートすることができます。",
+            "img": "browsergame/solitairebliss.png",
+            "url": "https://www.solitairebliss.com/"
         }
     ],
     "gameasset": [

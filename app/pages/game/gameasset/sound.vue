@@ -14,7 +14,8 @@
         <section class="content-wrapper">
             <div class="content-container">
                 <h2 class="text-center page-subheading">サウンド</h2>
-                <el-row :gutter="30" style="width: 100%;">
+
+                <el-row :gutter="30">
                     <el-col :span="8" v-for="game in gameasset" :key="game.name">
                         <SiteCard
                             v-if="game.genre==='sound'"
@@ -26,6 +27,7 @@
                         />
                     </el-col>
                 </el-row>
+
             </div>
         </section>
     </section>
