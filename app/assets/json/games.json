@@ -2,13 +2,13 @@
     "openvideogame": [
         {
             "name": "Hunter-Chameleon",
-            "desc": "",
+            "desc": "カメレオンのシューティングゲームです。絶え間なく出現するターゲットを撃ち抜き、ハイスコアを狙います。",
             "img": "openvideogame/chameleon.png",
             "url": "/game/openvideogame/hunter_chameleon"
         },
         {
             "name": "Escape fish",
-            "desc": "",
+            "desc": "魚のプラットフォームゲームです",
             "img": "openvideogame/iwashi.png",
             "url": "/game/openvideogame/escape_fish"
         },
@@ -226,7 +226,7 @@
             "url": "https://amachamusic.chagasi.com/"
         },
         {
-            "name": "フリーBGM・音楽素材 MusMus",
+            "name": "MusMus",
             "genre": "sound",
             "desc": "クレジット表記必須。曲のアレンジOK。二次配布は禁止。BGMを提供。",
             "img": "asset/sound/musmus.png",
@@ -240,7 +240,7 @@
             "url": "https://maou.audio/"
         },
         {
-            "name": "フリー音源・無料BGM「BGMer(ビージーエマー)」",
+            "name": "BGMer(ビージーエマー)",
             "genre": "sound",
             "desc": "可能な限りクレジット表記する。曲のアレンジOK。偽称しての二次配布は禁止。BGMを提供。",
             "img": "asset/sound/bgmer.png",
@@ -296,7 +296,7 @@
             "url": "https://www.hurtrecord.com/"
         },
         {
-            "name": "D-elf",
+            "name": "d-elf.com",
             "genre": "sound",
             "desc": "クレジット表記してくれると嬉しい。曲のアレンジOK。二次配布は禁止。BGM・歌・ボカロ曲を提供。",
             "img": "asset/sound/delf.png",
@@ -331,7 +331,7 @@
             "url": "http://nostalgiamusic.info/index.html"
         },
         {
-            "name": "フリー音楽素材 花鳥風月",
+            "name": "花鳥風月",
             "genre": "sound",
             "desc": "クレジット表記必須（ゲームやソフトウェア内での利用の場合は、その限りではない(無償配布の場合)）。素材の編集は自由だが、アレンジして公開する場合は、利用報告必須。特質的な指導を持つ宗教団体、犯罪系・自殺系サイトの音楽素材の販売・再配布、転載複製は禁止。BGMを提供。",
             "img": "asset/sound/kachohugetsu.png",
@@ -492,7 +492,7 @@
             "url": "https://ddd.pink/"
         },
         {
-            "name": "Plant Models Vol 60 - Maxtree",
+            "name": "Maxtree",
             "genre": "3dmodel",
             "desc": "二次配布は禁止。ハイクオリティでリアルな直物の3Dモデルを提供。ほぼ全てが有料。",
             "img": "asset/3dmodel/maxtree.png",

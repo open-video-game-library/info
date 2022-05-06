@@ -45,7 +45,7 @@
     </section>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .content-wrapper {
     background-color: #E6E6E6;
 }
@@ -63,6 +63,7 @@ ul > span {
 }
 ul > li {
     margin-left: -40px;
+    margin-bottom: 7px;
     font-size: 14px;
     list-style: none;
 }
@@ -70,6 +71,10 @@ ul > li {
 nuxt-link, a {
     text-decoration: none;
     color: #555C64;
+    &:hover {
+        transition: 0.2s;
+        border-bottom: 1px solid #555C64;
+    }
 }
 
 /* .btn-to-contact {

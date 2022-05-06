@@ -4,10 +4,12 @@
         <img v-if="img===''" v-bind:src="require('@/assets/image/thumbnail/no_image.png')" class="image" />
         <img v-else v-bind:src="require(`@/assets/image/thumbnail/${img}`)" class="image" />
         <div class="hover-elems">
-            <h2 class="name text-center"><span>{{ name }}</span></h2>
-            <p class="desc" v-if="desc !== ''">
-                {{ desc }}
-            </p>
+            <div>
+                <h2 class="name text-center"><span>{{ name }}</span></h2>
+                <p class="desc" v-if="desc !== ''">
+                    {{ desc }}
+                </p>
+            </div>
         </div>
     </el-card>
 </template>
@@ -65,7 +67,11 @@ export default {
     bottom: 0;
     z-index: 10;
 }
-
+.hover-elems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .full-link:hover~.hover-elems{
     opacity: 1;
     transition: .2s ease-in-out;
