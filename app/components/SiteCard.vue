@@ -1,17 +1,17 @@
 <template>
-    <el-card :body-style="{'position': 'relative', 'height': '336px'}" shadow="hover">
+    <el-card :body-style="{'position': 'relative', 'height': '360px'}" shadow="hover">
         <a :href="url"
             class="hover-pointer"
             target="_blank"
             rel="noopener noreferrer">
         </a>
-        <div class="text-center" style="background-color: #F5F5F5; height: 156px;">
+        <div class="text-center img-wrapper">
             <img v-if="img==''" v-bind:src="require('@/assets/image/thumbnail/no_image.png')" class="image" />
             <img v-else v-bind:src="require(`@/assets/image/thumbnail/${img}`)" class="image" />
         </div>
         <div>
-            <h3 style="margin-top: 10px;">{{ name }}</h3>
-            <p>{{ desc }}</p>
+            <h3 class="text-center" style="margin-top: 15px;">{{ name }}</h3>
+            <p class="desc">{{ desc }}</p>
         </div>
     </el-card>
 </template>
@@ -27,14 +27,7 @@ export default {
 }
 </script>
 
-<style scoped>
-.image {
-    /* width: 100%; */
-    max-width: 100%;
-    height: 156px;
-    border-radius: 2px;
-}
-
+<style lang="scss" scoped>
 .scroll-box > p {
     color: #555C64;
 }
@@ -44,6 +37,23 @@ a {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 124px;
+    bottom: 0;
+}
+
+.img-wrapper {
+    background-color: #F5F5F5;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 2px;
+    .image {
+        border-radius: 2px;
+        vertical-align: top;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.desc {
+    line-height: 28px;
 }
 </style>

@@ -12,7 +12,7 @@
 
         <section class="content-wrapper bg-white">
             <div class="content-container">
-                <el-row :gutter="30" style="width: 100%;">
+                <el-row :gutter="30">
                     <el-col :span="12" v-for="game in games" :key="game.name">
                         <PageCard
                             style="margin-bottom: 30px;"
@@ -52,13 +52,13 @@ export default {
                 },
                 {
                     name: 'ゲームアセット',
-                    desc: '準備なくブラウザ上でプレイ可能なゲーム。マウス・キーボードで操作できるゲームを探している人におすすめ。',
+                    desc: 'ゲームを自作・編集する際必要になる3Dモデルやサウンドなどのアセット集。手軽にゲームを自作したい方におすすめ。',
                     img: 'Game_asset.png',
                     url: '/game/gameasset'
                 },
                 {
                     name: 'ブラウザゲーム',
-                    desc: 'ゲームを自作・編集する際必要になる3Dモデルやサウンドなどのアセット集。手軽にゲームを自作したい方におすすめ。',
+                    desc: '準備なくブラウザ上でプレイ可能なゲーム。マウス・キーボードで操作できるゲームを探している人におすすめ。',
                     img: 'Game_browser.png',
                     url: '/game/browsergame'
                 }

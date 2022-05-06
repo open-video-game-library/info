@@ -27,8 +27,8 @@ export default {
 <style lang="scss" scoped>
 .card-wrapper {
     position: relative;
-    width: 448px;
-    height: 252px;
+    // width: 448px;
+    // height: 252px;
 }
 .hover-elems {
     background-color: rgba(255, 255, 255, 0.9);
@@ -47,13 +47,13 @@ export default {
     border-bottom: 1px black solid;
 }
 .desc {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .image {
     display: block;
-    width: 448px;
-    height: 252px;
+    width: 100%;
+    // height: 100%;
     z-index: 1;
 }
 
