@@ -17,7 +17,7 @@
                 <p class="text-center page-subdesc">このガイドラインでは、オープンビデオゲームを研究にご活用いただく際のルールやFAQなどについて、ご説明いたします。</p>
                 <h3 class="text-center page-subsubheading">ご利用OK/NG例</h3>
                 <el-row class="mb-60" :gutter="30">
-                    <el-col class="mb-30" :span="24">
+                    <el-col class="mb-30" :span="12">
                         <h4 class="text-center mb-15">OK</h4>
                         <el-card>
                             <p class="text-center mb-10">営利を目的としない以下のような利用</p>
@@ -39,7 +39,7 @@
                         </el-card>
                     </el-col>
 
-                    <el-col :span="24">
+                    <el-col :span="12">
                         <h4 class="text-center mb-15">NG</h4>
                         <el-card>
                             <p class="text-center">営利を目的とする利用</p>
@@ -51,18 +51,24 @@
                 <el-row :gutter="30">
                     <el-col :span="24">
                         <el-card>
-                            <el-card class="mb-10">
-                                <h5 class="text-center mb-10">引用</h5>
-                                <p>
-                                    本ライブラリのゲームまたは、機能を研究利用する場合、各ゲームページで指定された論文を引用し、本ゲームライブラリを利用した旨を明記してください。
-                                </p>
-                            </el-card>
-                            <el-card>
-                                <h5 class="text-center mb-10">設定パラメータの明示</h5>
-                                <p>
-                                    本ゲームは、利用条件に合わせてゲーム内パラメータを変更できることができます。それに伴い、同一のゲームで難易度や体験が変化します。研究の公平性、再現性を保つために、設定したパラメータの値を明示するようにしてください。
-                                </p>
-                            </el-card>
+                            <el-row :gutter="30">
+                                <el-col :span="24">
+                                    <el-card class="mb-10">
+                                        <h5 class="text-center mb-10">引用</h5>
+                                        <p>
+                                            本ライブラリのゲームまたは、機能を研究利用する場合、各ゲームページで指定された論文を引用し、本ゲームライブラリを利用した旨を明記してください。
+                                        </p>
+                                    </el-card>
+                                </el-col>
+                                <el-col :span="24">
+                                    <el-card>
+                                        <h5 class="text-center mb-10">設定パラメータの明示</h5>
+                                        <p>
+                                            本ゲームは、利用条件に合わせてゲーム内パラメータを変更できることができます。それに伴い、同一のゲームで難易度や体験が変化します。研究の公平性、再現性を保つために、設定したパラメータの値を明示するようにしてください。
+                                        </p>
+                                    </el-card>
+                                 </el-col>
+                            </el-row>
                         </el-card>
                     </el-col>
                 </el-row>
@@ -77,7 +83,7 @@
                         <PageCard
                             style="margin-bottom: 30px;"
                             :name="game.name"
-                            :decs="game.desc"
+                            :desc="game.desc"
                             :img="game.img"
                             :url="game.url"
                         />
@@ -86,7 +92,7 @@
                         <PageCard
                             style="margin-bottom: 30px;"
                             :name="'こういうゲームがほしい！'"
-                            :decs="''"
+                            :desc="'研究利用したいジャンルのゲームがありましたら、ぜひご連絡ください。'"
                             :img="'more.png'"
                             :url="'/contact'"
                         />
