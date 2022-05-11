@@ -64,6 +64,10 @@ html, body { min-width: 750px; }
     font-weight: normal;
     margin-left: 8px;
     margin-top: 22px;
+    .breadcrumb {
+        text-decoration: none;
+        color: #04062D;
+    }
 }
 
 .el-card {

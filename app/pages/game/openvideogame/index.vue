@@ -6,7 +6,11 @@
                     <!-- <img class="logo" src="@/assets/image/logo/Game_logo_black.png" /> -->
                     <span class="material-icons" style="">sports_esports</span>
                     <span style="font-size: 48px;">Game</span>
-                    <span class="sub-headline">オープンビデオゲーム</span>
+                    <span class="sub-headline">
+                        <nuxt-link class="breadcrumb" :to="'/game'">研究利用できるゲーム</nuxt-link>
+                        ＞
+                        <strong>オープンビデオゲーム</strong>
+                    </span>
                 </h1>
             </div>
         </section>

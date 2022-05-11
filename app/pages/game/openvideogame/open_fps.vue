@@ -1,11 +1,17 @@
 <template>
     <section class="container">
-        <section class="content-wrapper bg-white">
+        <section class="content-wrapper bg-heading">
             <div class="content-container">
                 <h1 class="page-heading">
                     <span class="material-icons" style="">sports_esports</span>
                     <span style="font-size: 48px;">Game</span>
-                    <span class="sub-headline">オープンビデオゲーム</span>
+                    <span class="sub-headline">
+                        <nuxt-link class="breadcrumb" :to="'/game'">研究利用できるゲーム</nuxt-link>
+                        ＞
+                        <nuxt-link class="breadcrumb" :to="'/game/openvideogame'">オープンビデオゲーム</nuxt-link>
+                        ＞
+                        <strong>Open FPS</strong>
+                    </span>
                 </h1>
             </div>
         </section>
@@ -111,4 +117,10 @@ export default {
 </script>
 
 <style scoped>
+.bg-heading {
+    background-image: url("~@/assets/image/background/heading_game.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
 </style>

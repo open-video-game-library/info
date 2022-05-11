@@ -6,7 +6,13 @@
                     <!-- <img class="logo" src="@/assets/image/logo/Game_logo_black.png" /> -->
                     <span class="material-icons" style="">sports_esports</span>
                     <span style="font-size: 48px;">Game</span>
-                    <span class="sub-headline">ゲームアセット｜開発言語/フレームワーク</span>
+                    <span class="sub-headline">
+                        <nuxt-link class="breadcrumb" :to="'/game'">研究利用できるゲーム</nuxt-link>
+                        ＞
+                        <nuxt-link class="breadcrumb" :to="'/game/gameasset'">ゲームアセット</nuxt-link>
+                        ＞
+                        <strong>開発言語/フレームワーク</strong>
+                    </span>
                 </h1>
             </div>
         </section>

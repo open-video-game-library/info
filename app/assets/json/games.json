@@ -42,7 +42,7 @@
         {
             "name": "東方弾幕風v0.12m",
             "genre": "shooting",
-            "desc": "『東方』シリーズ風のシューティングゲームを作成できるシミュレーターです。",
+            "desc": "「東方」シリーズ風のシューティングゲームを作成できるシミュレーターです。敵の画像の変更や自機の作成ができます。",
             "img": "opensoursegame/touhougc.jpeg",
             "url": "https://touhougc.web.fc2.com/products/th_dnh.html"
         },
@@ -56,7 +56,7 @@
         {
             "name": "機装猟兵ガンハウンド",
             "genre": "shooting",
-            "desc": "2008年発売の横スクロールの2Dアクションシューティングゲームで、その後オープンソース化されました。敵データやSEなどのゲーム素材の他、作成ツールである『gxLib』を使用することができます。",
+            "desc": "オープンソース化された横スクロールの2Dアクションシューティングゲームです。敵データやSEなどのゲーム素材の他、作成ツールである『gxLib』を使用できます。",
             "img": "opensoursegame/garuru.jpeg",
             "url": ""
         },
@@ -84,21 +84,21 @@
         {
             "name": "FightingICE",
             "genre": "fighting",
-            "desc": "FightingICEはComputational Intelligence and Games (CIG)公認の格闘ゲームAIの性能を競う国際大会 Fighting Game AI Competition (FTGAIC)に使用されている2D格闘ゲームです。",
+            "desc": "格闘ゲームAIの性能を競う国際大会Fighting Game AI Competition (FTGAIC)に使用されている、2D格闘ゲームです。",
             "img": "opensoursegame/FightingICE.jpeg",
             "url": "https://www.ice.ci.ritsumei.ac.jp/~ftgaic/"
         },
         {
             "name": "Torcs",
             "genre": "driving",
-            "desc": "TORCSはマルチプラットフォームのカーシュミレータです。通常のカーレースゲーム、AIレースゲーム、研究用プラットフォームとして使えます。",
+            "desc": "マルチプラットフォームのカーシュミレータです。通常のカーレースゲーム、AIレースゲーム、研究用プラットフォームとして使えます。",
             "img": "opensoursegame/torcs.png",
             "url": "http://torcs.sourceforge.net/index.php"
         },
         {
             "name": "Tux Racer",
             "genre": "driving",
-            "desc": "Tux Racer は、Linux ペンギンの Tux となり、雪に覆われた険しい山々を駆け抜けるゲームです。楽しく簡単にプレイでき、100万回以上ダウンロードされています。",
+            "desc": "LinuxペンギンのTuxとなり、雪に覆われた険しい山々を駆け抜けるゲームです。楽しく簡単にプレイでき、100万回以上ダウンロードされています。",
             "img": "opensoursegame/tuxracer.jpeg",
             "url": "http://tuxracer.sourceforge.net/"
         },
@@ -119,28 +119,28 @@
         {
             "name": "Minetest",
             "genre": "other",
-            "desc": "オープンソースのボクセルゲームエンジンです。用意された多くのゲームのプレイや、ゲームを好みに合わせて改造したり、自分のゲームを作ったり、マルチプレイヤーサーバーで遊んだりすることができます。",
+            "desc": "オープンソースのボクセルゲームエンジンです。ゲームを好みに合わせて改造したり、独自のゲームを作ったり、マルチプレイヤーサーバーで遊んだりできます。",
             "img": "opensoursegame/minetest.jpeg",
             "url": "https://www.minetest.net/"
         },
         {
             "name": "The Arcade Learning Environment",
             "genre": "other",
-            "desc": "Arcade Learning Environment (ALE) は、研究者やホビイストがAtari 2600ゲーム用のAIエージェントを開発するためのシンプルなフレームワークです。",
+            "desc": "研究者やホビイストがAtari 2600ゲーム用のAIエージェントを開発するためのシンプルなフレームワークです。",
             "img": "opensoursegame/ale.gif",
             "url": "https://github.com/mgbellemare/Arcade-Learning-Environment"
         },
         {
             "name": "GPSshogi",
             "genre": "other",
-            "desc": "GPS将棋は、東京大学大学院総合文化研究科の教員・学生が開催しているゲームプログラミングセミナー（Game Programming Seminar = GPS）のメンバーが中心になって開発が行われているソフトウェアです*1。ゲームプログラミングの研究として開発が行われています。",
+            "desc": "東京大学大学院総合文化研究科の教員・学生が開催しているGame Programming Seminar（GPS）のメンバーが中心になって開発が行われているソフトウェアです。ゲームプログラミングの研究として開発が行われています。",
             "img": "opensoursegame/gpsshogi.png",
             "url": "https://gps.tanaka.ecc.u-tokyo.ac.jp/gpsshogi/"
         },
         {
             "name": "OpenAI Gym",
             "genre": "other",
-            "desc": "Gymは強化学習アルゴリズムを開発し、比較するためのツールキットです。歩行からポンやピンボールのようなゲームのプレイまで、エージェントに教えることができます。",
+            "desc": "強化学習アルゴリズムを開発し、比較するためのツールキットです。歩行からポンやピンボールのようなゲームのプレイまで、エージェントに教えることができます。",
             "img": "opensoursegame/gym.jpeg",
             "url": "https://gym.openai.com/"
         },
@@ -150,13 +150,6 @@
             "desc": "強化学習エージェントが汎用のスキルをどれだけ早く学習できるかを直接測定できる、16種類の手続き型生成環境です。",
             "img": "opensoursegame/procgen_benchmark.jpeg",
             "url": "https://openai.com/blog/procgen-benchmark/"
-        },
-        {
-            "name": "Pong Game",
-            "genre": "sports",
-            "desc": "このサイトでは世界的に有名なポンゲームをプレイできます。難易度の変更や、複数人でのネットワーク対戦をすることができます。",
-            "img": "opensoursegame/pong.png",
-            "url": "https://www.ponggame.org/"
         }
     ],
     "browsergame": [
@@ -170,7 +163,7 @@
         {
             "name": "Crazy Games",
             "genre": "",
-            "desc": "CrazyGamesは、ゲーム開発者がゲームを掲載するプラットフォームです。広告が付いている代わりに多くのクオリティの高いゲームを利用することができます。",
+            "desc": "ゲーム開発者がゲームを掲載するプラットフォームです。広告が付いている代わりに多くのクオリティの高いゲームを利用することができます。",
             "img": "browsergame/crazygames.png",
             "url": "https://www.crazygames.com/"
         },
@@ -184,23 +177,30 @@
         {
             "name": "JSPuzzles",
             "genre": "",
-            "desc": "JSPuzzlesでは多様なジグソーパズルをプレイすることができます。ピースの数は9ピースから200以上まで選択でき、クリアにかかった時間も取得できます。",
+            "desc": "多様なジグソーパズルをプレイすることができます。ピースの数は9ピースから200以上まで選択でき、クリアにかかった時間も取得できます。",
             "img": "browsergame/jspuzzles.jpeg",
             "url": "https://www.jspuzzles.com/"
         },
         {
             "name": "Sudoku",
             "genre": "",
-            "desc": "Sudokuは数独に特化したゲームサイトです。4段階の難易度を選択すると、ランダムに問題が出されます。",
+            "desc": "数独に特化したゲームサイトです。4段階の難易度を選択すると、ランダムに問題が出されます。",
             "img": "browsergame/sudoku.png",
             "url": "https://www.livesudoku.com/"
         },
         {
             "name": "SolitaireBliss",
             "genre": "",
-            "desc": "SolitaireBlissではソリティアやトランプゲームをプレイすることができます。ウェア部上のゲームですが、セーブ機能が付いておりロードすると元の位置から再スタートすることができます。",
+            "desc": "ソリティアやトランプゲームをプレイすることができます。セーブ機能が付いておりロードすると元の位置から再スタートすることができます。",
             "img": "browsergame/solitairebliss.png",
             "url": "https://www.solitairebliss.com/"
+        },
+        {
+            "name": "Pong Game",
+            "genre": "",
+            "desc": "このサイトでは世界的に有名なポンゲームをプレイできます。難易度の変更や、複数人でのネットワーク対戦をすることができます。",
+            "img": "opensoursegame/pong.png",
+            "url": "https://www.ponggame.org/"
         }
     ],
     "gameasset": [
@@ -539,6 +539,20 @@
             "desc": "モデルの改変OK。二次配布は禁止。ハイクオリティでリアルな3Dモデルを提供。有料のものがほとんどだが、無料のものもある。",
             "img": "asset/3dmodel/hum3d.png",
             "url": "https://hum3d.com/ja/"
+        },
+        {
+            "name": "Game UI Database",
+            "genre": "interface",
+            "desc": "さまざまなゲームのUIを一覧できるデータベースです。「ロード画面」「ボタン」などの条件付きクエリで検索できます。",
+            "img": "asset/interface/ui_db.png",
+            "url": "https://www.gameuidatabase.com/"
+        },
+        {
+            "name": "Lospec",
+            "genre": "interface",
+            "desc": "ドット絵（ピクセルアート）を描くための知見やチュートリアルが豊富に載っているサイトです。",
+            "img": "asset/interface/lospec.jpeg",
+            "url": "https://lospec.com/"
         }
     ]
 }

@@ -6,7 +6,11 @@
                     <!-- <img class="logo" src="@/assets/image/logo/Game_logo_black.png" /> -->
                     <span class="material-icons" style="">sports_esports</span>
                     <span style="font-size: 48px;">Game</span>
-                    <span class="sub-headline">ゲームアセット</span>
+                    <span class="sub-headline">
+                        <nuxt-link class="breadcrumb" :to="'/game'">研究利用できるゲーム</nuxt-link>
+                        ＞
+                        <strong>ゲームアセット</strong>
+                    </span>
                 </h1>
             </div>
         </section>
@@ -60,11 +64,11 @@ export default {
                 //     img: "asset/Genre/effect.png",
                 //     to: "gameasset/effect"
                 // },
-                // {
-                //     title: "UI/インタフェース",
-                //     img: "asset/Genre/ui.png",
-                //     to: "gameasset/ui"
-                // },
+                {
+                    name: "UI/グラフィック",
+                    img: "asset/Genre/ui.jpeg",
+                    url: "/game/gameasset/interface"
+                },
                 // {
                 //     title: "教育/学習",
                 //     img: "asset/Genre/education.png",

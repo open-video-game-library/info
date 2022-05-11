@@ -5,7 +5,13 @@
                 <h1 class="page-heading">
                     <span class="material-icons" style="">sports_esports</span>
                     <span style="font-size: 48px;">Game</span>
-                    <span class="sub-headline">ゲームアセット｜3Dモデル</span>
+                    <span class="sub-headline">
+                        <nuxt-link class="breadcrumb" :to="'/game'">研究利用できるゲーム</nuxt-link>
+                        ＞
+                        <nuxt-link class="breadcrumb" :to="'/game/gameasset'">ゲームアセット</nuxt-link>
+                        ＞
+                        <strong>3Dモデル</strong>
+                    </span>
                 </h1>
             </div>
         </section>

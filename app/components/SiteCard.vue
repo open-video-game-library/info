@@ -1,6 +1,7 @@
 <template>
     <el-card :body-style="{'position': 'relative', 'height': '380px'}" shadow="hover">
-        <a :href="url"
+        <a v-if="url!==''" 
+            :href="url"
             class="hover-pointer"
             target="_blank"
             rel="noopener noreferrer">
