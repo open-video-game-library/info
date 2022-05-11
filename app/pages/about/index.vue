@@ -16,7 +16,7 @@
                 <div style="padding-bottom: 120px; position: absolute; bottom: 0;">
                     <h2 style="margin-bottom: 30px;">
                         Open Video Game Libraryはゲーム研究を行いやすくし、
-                        <br />ゲーム研究の発展に貢献することを目的としたゲーム研究者ライブラリです。
+                        <br />ゲーム研究の発展に貢献することを目的としたゲーム研究者のためのライブラリです。
                     </h2>
                     <p style="margin: 0;">
                         市販ビデオゲームの編集可能性が低い点や、ゲームを自作する際の開発コスト、他研究との比較のしやすさなどを問題視し、

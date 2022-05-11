@@ -14,7 +14,7 @@
         <section class="content-wrapper">
             <div class="content-container">
                 <h2 class="text-center page-subheading">ガイドライン</h2>
-                <p class="text-center page-subdesc">このガイドラインでは、オープンビデオゲームを研究にご活用いただく際のルールやFAQなどについて、ご説明いたします。</p>
+                <p class="text-center page-subdesc">このガイドラインでは、オープンビデオゲームを研究にご活用いただく際のルールと推奨事項についてご説明いたします。</p>
                 <h3 class="text-center page-subsubheading">ご利用OK/NG例</h3>
                 <el-row class="mb-60" :gutter="30">
                     <el-col class="mb-30" :span="12">
@@ -25,7 +25,7 @@
                                 <h5 class="text-center mb-10">研究や創作活動での利用</h5>
                                 <ul>
                                     <li>オープンビデオゲームで取得した体験データを用いて評価実験を行い、その内容を論文に掲載する</li>
-                                    <li>学術会議や展示課にてオープンビデオゲームをデモンストレーション発表に使用する</li>
+                                    <li>学術会議や展示会にてオープンビデオゲームをデモンストレーション発表に使用する</li>
                                     <li>オンライン会議や配信サービスにて、プレイしている様子を共有する</li>
                                 </ul>
                             </el-card>
@@ -108,12 +108,12 @@
                 <h3 class="text-center page-subsubheading">パラメータの調整</h3>
                 <p class="page-subsubdesc">パラメータ調整によって、実験環境などの都合に合わせてゲームの難易度や仕様を手軽に調整することができます。数値調整だけでなく、画像差し替えによるビジュアルの調整も可能です。</p>
                 <div class="text-center">
-                    <img v-bind:src="require(`@/assets/image/thumbnail/parameter_input.png`)" style="width: 80%;" />
+                    <img v-bind:src="require('@/assets/image/thumbnail/openvideogame/parameter_input.png')" style="width: 80%;" />
                 </div>
                 <h3 style="margin-top: 60px;" class="text-center page-subsubheading">パラメータの取得</h3>
                 <p class="page-subsubdesc">観察だけでは把握しきれない、ゲームの内部データを取得することができます。ゲーム体験やコントローラデバイスの評価分析に活用できます。</p>
                 <div class="text-center">
-                    <img v-bind:src="require(`@/assets/image/thumbnail/parameter_output.png`)" style="width: 80%;" />
+                    <img v-bind:src="require('@/assets/image/thumbnail/openvideogame/parameter_output.png')" style="width: 80%;" />
                 </div>
             </div>
         </section>
@@ -142,5 +142,9 @@ export default {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
+}
+
+li {
+    margin-left: -20px;
 }
 </style>

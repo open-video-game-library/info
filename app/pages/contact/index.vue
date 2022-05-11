@@ -84,7 +84,7 @@ export default {
                     .then(() => {
                         this.error_msg = ''
                         this.$router.push({
-                            path: 'thanks',
+                            path: '/contact/thanks',
                             query: {
                                 name: this.form.name,
                                 email: this.form.email,

@@ -48,10 +48,13 @@
         <section class="content-wrapper">
             <div class="content-container">
                 <h3 class="text-center page-subheading">操作方法</h3>
-                <p>
+                <div class="text-center">
+                    <img v-bind:src="require('@/assets/image/thumbnail/openvideogame/manual_fish.png')" style="width: 80%;" />
+                </div>
+                <!-- <p>
                     上下キー→ 上下の移動<br />
                     スペース → 加速
-                </p>
+                </p> -->
             </div>
         </section>
 
