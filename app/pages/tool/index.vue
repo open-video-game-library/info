@@ -22,6 +22,7 @@
                             :desc="tool.desc"
                             :img="tool.img"
                             :url="tool.url"
+                            :isOurs="tool.isOurs"
                         />
                     </el-col>
                 </el-row>
@@ -45,19 +46,22 @@ export default {
                     name: 'Multi View Recorder',
                     desc: 'Multi View RecorderはWeb上で録画と動画の保存ができるツールです。Webカメラを複数台接続し、他視点を同時に録画することができます。',
                     img: 'Tool_multi_view_recorder.png',
-                    url: 'https://open-video-game-library.github.io/multi-view-recorder/'
+                    url: 'https://open-video-game-library.github.io/multi-view-recorder/',
+                    isOurs: true
                 },
                 {
                     name: 'JumpLab',
                     desc: 'プラットフォームゲーム（ジャンプアクションゲーム）のジャンプ処理やカメラ移動処理にまつわる、諸パラメタを可変にした実験用ソフトウェアです。',
                     img: 'Tool_jumplab.png',
-                    url: 'https://fukuchi.org/works/jumplab/index.html'
+                    url: 'https://fukuchi.org/works/jumplab/index.html',
+                    isOurs: false
                 },
                 {
                     name: 'Game Controllerizer',
                     desc: 'Game Controllerizerはディジタルゲーム拡張のためのミドルウェアです。多様な機器および情報源を既存ゲームへの入力として扱うことができます。',
                     img: 'Tool_game_controllerizer.png',
-                    url: 'https://sites.google.com/view/gamecontrollerizer'
+                    url: 'https://sites.google.com/view/gamecontrollerizer',
+                    isOurs: false
                 }
             ]
         }

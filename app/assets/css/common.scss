@@ -198,3 +198,20 @@ html, body { min-width: 750px; }
         margin: 30px auto;
     }
 }
+
+.ovgl-mark {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 2px 8px;
+    span:first-child {
+        font-size: 12px;
+    }
+    span:last-child {
+        font-size: 24px;
+    }
+}

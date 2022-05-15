@@ -103,14 +103,16 @@
                 </p>
                 <el-row :gutter="8" style="width: 100%;">
                     <el-col :span="8" v-for="mem in member" :key="mem.name_short">
-                        <MemberCard
-                            class="grid-content"
-                            :name="mem.name"
-                            :name_en="mem.name_en"
-                            :name_short="mem.name_short"
-                            :grade="mem.grade"
-                            :homepage="mem.homepage"
-                        />
+                        <div style="width: 72%; margin: 0 auto;">
+                            <MemberCard
+                                class="grid-content"
+                                :name="mem.name"
+                                :name_en="mem.name_en"
+                                :name_short="mem.name_short"
+                                :grade="mem.grade"
+                                :homepage="mem.homepage"
+                            />
+                        </div>
                     </el-col>
                 </el-row>
             </div>

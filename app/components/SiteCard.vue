@@ -14,6 +14,10 @@
             <h3 class="text-center" style="margin-top: 15px;">{{ name }}</h3>
             <p class="desc">{{ desc }}</p>
         </div>
+        <div v-if="isOurs" class="ovgl-mark">
+            <span>Presented by</span>
+            <span>OVGL</span>
+        </div>
     </el-card>
 </template>
 
@@ -23,7 +27,8 @@ export default {
         name: String,
         desc: String,
         img: String,
-        url: String
+        url: String,
+        isOurs: Boolean
     }
 }
 </script>
