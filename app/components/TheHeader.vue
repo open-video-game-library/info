@@ -1,10 +1,14 @@
 <template>
     <el-menu mode="horizontal" :router="true"
+        :default-active="'1'"
         class="header-wrapper"
         background-color="#04062D"
         text-color="#fff"
         active-text-color="#fff">
 
+        <el-menu-item index="0" :route="{ path: '/' }">
+            <img height="32" v-bind:src="require('@/assets/image/logo/logo_white.png')" />
+        </el-menu-item>
         <el-menu-item index="5" style="float: right;" :route="{ path: '/contact/'}">
             <span class="material-icons">email</span>
             <span>Contact</span>
@@ -28,6 +32,21 @@
 
     </el-menu>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            activeIndex: '1'
+        }
+    },
+    mounted() {
+        // 読み込まれたページをアクティブ
+        this.activeIndex = this.$route.name;
+        console.log(this.$route.name)
+    }
+}
+</script>
 
 <style scoped>
 .header-wrapper {

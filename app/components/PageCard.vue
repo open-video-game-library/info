@@ -1,21 +1,25 @@
 <template>
-    <el-card class="card-wrapper" :body-style="{padding: '0px'}" shadow="hover">
-        <nuxt-link :to="url" class="hover-pointer full-link"></nuxt-link>
-        <img v-if="img===''" v-bind:src="require('@/assets/image/thumbnail/no_image.png')" class="image" />
-        <img v-else v-bind:src="require(`@/assets/image/thumbnail/${img}`)" class="image" />
-        <div class="hover-elems">
-            <div>
-                <h2 class="name text-center"><span>{{ name }}</span></h2>
-                <p class="desc" v-if="desc !== ''">
-                    {{ desc }}
-                </p>
-            </div>
-        </div>
+    <div style="position: relative;">
+        <div v-if="isOurs" class="ovgl-line-horizontal"></div>
+        <div v-if="isOurs" class="ovgl-line-vertical"></div>
         <div v-if="isOurs" class="ovgl-mark">
             <span>Presented by</span>
             <span>OVGL</span>
         </div>
-    </el-card>
+        <el-card class="card-wrapper" :body-style="{padding: '0px'}" shadow="hover">
+            <nuxt-link :to="url" class="hover-pointer full-link"></nuxt-link>
+            <img v-if="img===''" v-bind:src="require('@/assets/image/thumbnail/no_image.png')" class="image" />
+            <img v-else v-bind:src="require(`@/assets/image/thumbnail/${img}`)" class="image" />
+            <div class="hover-elems">
+                <div>
+                    <h2 class="name text-center"><span>{{ name }}</span></h2>
+                    <p class="desc" v-if="desc !== ''">
+                        {{ desc }}
+                    </p>
+                </div>
+            </div>
+        </el-card>
+    </div>
 </template>
 
 <script>

@@ -1,24 +1,28 @@
 <template>
-    <el-card :body-style="{'position': 'relative', 'height': '380px'}" shadow="hover">
-        <a v-if="url!==''" 
-            :href="url"
-            class="hover-pointer"
-            target="_blank"
-            rel="noopener noreferrer">
-        </a>
-        <div class="text-center img-wrapper">
-            <img v-if="img==''" v-bind:src="require('@/assets/image/thumbnail/no_image.png')" class="image" />
-            <img v-else v-bind:src="require(`@/assets/image/thumbnail/${img}`)" class="image" />
-        </div>
-        <div>
-            <h3 class="text-center" style="margin-top: 15px;">{{ name }}</h3>
-            <p class="desc">{{ desc }}</p>
-        </div>
+    <div style="position: relative;">
+        <div v-if="isOurs" class="ovgl-line-horizontal"></div>
+        <div v-if="isOurs" class="ovgl-line-vertical"></div>
         <div v-if="isOurs" class="ovgl-mark">
             <span>Presented by</span>
             <span>OVGL</span>
         </div>
-    </el-card>
+        <el-card :body-style="{'position': 'relative', 'height': '380px'}" shadow="hover">
+            <a v-if="url!==''" 
+                :href="url"
+                class="hover-pointer"
+                target="_blank"
+                rel="noopener noreferrer">
+            </a>
+            <div class="text-center img-wrapper">
+                <img v-if="img==''" v-bind:src="require('@/assets/image/thumbnail/no_image.png')" class="image" />
+                <img v-else v-bind:src="require(`@/assets/image/thumbnail/${img}`)" class="image" />
+            </div>
+            <div>
+                <h3 class="text-center" style="margin-top: 15px;">{{ name }}</h3>
+                <p class="desc">{{ desc }}</p>
+            </div>
+        </el-card>
+    </div>
 </template>
 
 <script>

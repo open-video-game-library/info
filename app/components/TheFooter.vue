@@ -72,7 +72,7 @@ nuxt-link, a {
     text-decoration: none;
     color: #555C64;
     &:hover {
-        transition: 0.2s;
+        transition: 0.1s;
         border-bottom: 1px solid #555C64;
     }
 }

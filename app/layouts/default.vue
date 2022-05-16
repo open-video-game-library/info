@@ -1,6 +1,6 @@
 <template>
     <div>
-        <TheHeader style="position: fixed; width: 100%; z-index: 100;" />
+        <TheHeader style="position: fixed; width: 100%; z-index: 1000;" />
         <main class="wrapper" style="padding-top: 61px;">
             <nuxt class="container" />
         </main>

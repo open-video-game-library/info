@@ -78,7 +78,12 @@ export default {
                 }
             ]
         }
-    }
+    },
+    // mounted() {
+    //     // 読み込まれたページをアクティブ
+    //     this.activeIndex = this.$route.name;
+    //     console.log(this.$route.name)
+    // }
 }
 </script>
 

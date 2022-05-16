@@ -2,8 +2,7 @@
     <div class="top-wrapper">
         <div class="top-container" style="color: white;">
             <div class="title text-center" style="padding-bottom: 80px;">
-                <div style="font-size: 120px; font-weight: 900;">OVGL</div>
-                <div style="font-size: 40px; font-weight: 600;">Open Video Game Library</div>
+                <img width="480" v-bind:src="require('@/assets/image/logo/logo_white.png')" />
             </div>
 
             <p style="padding: 0; height: 48px;">
