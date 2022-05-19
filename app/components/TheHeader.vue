@@ -7,7 +7,7 @@
         active-text-color="#fff">
 
         <el-menu-item index="0" :route="{ path: '/' }">
-            <img height="32" v-bind:src="require('@/assets/image/logo/logo_white.png')" />
+            <img height="40" v-bind:src="require('@/assets/image/logo/logo_white.png')" />
         </el-menu-item>
         <el-menu-item index="5" style="float: right;" :route="{ path: '/contact/'}">
             <span class="material-icons">email</span>
@@ -21,9 +21,9 @@
             <span class="material-icons">science</span>
             <span>Tool</span>
         </el-menu-item>
-        <el-menu-item index="2" style="float: right;" :route="{ path: '/game/' }">
+        <el-menu-item index="2" style="float: right;" :route="{ path: '/openvideogame/' }">
             <span class="material-icons" style="">sports_esports</span>
-            <span>Game</span>
+            <span>Open Video Game</span>
         </el-menu-item>
         <el-menu-item index="1" style="float: right;" :route="{ path: '/about/' }">
             <span class="material-icons">info</span>

@@ -33,17 +33,17 @@
                 <el-row :gutter="30">
                     <el-col :span="8">
                         <div class="text-center">
-                            <img style="width: 80%;" v-bind:src="require('@/assets/image/logo/can1.png')" />
+                            <img style="width: 50%;" v-bind:src="require('@/assets/image/logo/can1.png')" />
                         </div>
                     </el-col>
                     <el-col :span="8">
                         <div class="text-center">
-                            <img style="width: 80%;" v-bind:src="require('@/assets/image/logo/can2.png')" />
+                            <img style="width: 50%;" v-bind:src="require('@/assets/image/logo/can2.png')" />
                         </div>
                     </el-col>
                     <el-col :span="8">
                         <div class="text-center">
-                            <img style="width: 80%;" v-bind:src="require('@/assets/image/logo/can3.png')" />
+                            <img style="width: 50%;" v-bind:src="require('@/assets/image/logo/can3.png')" />
                         </div>
                     </el-col>
                 </el-row>
@@ -58,7 +58,7 @@
                         <h3 class="text-center">ゲーム研究の知見を深める</h3>
                     </el-col>
                 </el-row>
-                <el-row :gutter="30">
+                <el-row :gutter="40">
                     <el-col :span="8">
                         <p>
                             <!-- 研究で利用されることを前提に作成されたオープンビデオゲームや、ソースコードが公開され、研究に合わせて修正できるオープンソースゲームを見つけ、利用することができます。 -->

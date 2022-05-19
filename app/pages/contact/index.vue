@@ -13,7 +13,7 @@
         <section class="content-wrapper">
             <div class="content-container">
                 <p class="page-subdesc">
-                    オープンビデオゲームライブラリに興味を持っていただきありがとうございます。今後、研究者にとってより良いものに改良していくために、ご意見・ご要望をお聞かせください！共同研究、依頼などについてのご連絡も承っております。
+                    オープンビデオゲームライブラリに興味を持っていただきありがとうございます。今後、研究者にとってより良いものに改良していくために、ご意見・ご要望をお聞かせください。共同研究、依頼などについてのご連絡も承っております。
                 </p>
 
                 <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScpDBuQV0ca-PTrxrzm4QniH_u5_wF-3SGEHx1FT3SVJGbpqg/viewform?embedded=true" width="640" height="677" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe> -->
@@ -33,8 +33,8 @@
                             placeholder="opengame@example.com"></el-input>
                     </el-form-item>
                     <el-form-item label="メッセージ">
-                        <el-input type="textarea" v-model="form.message"
-                            placeholder="こういうゲームが欲しい！"></el-input>
+                        <el-input type="textarea" :rows="8" v-model="form.message"
+                            placeholder=""></el-input>
                     </el-form-item>
                     <el-form-item>
                         <el-button type="primary" @click="onSubmit" :loading="isSending">{{ submit_msg }}</el-button>

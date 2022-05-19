@@ -15,7 +15,7 @@
                 </ul>
                 <ul>
                     <span>ゲームを見つける</span>
-                    <li><nuxt-link to="/game/openvideogame">オープンビデオゲーム</nuxt-link></li>
+                    <li><nuxt-link to="/openvideogame">オープンビデオゲーム</nuxt-link></li>
                     <li><nuxt-link to="/game/opensoursegame">オープンソースゲーム</nuxt-link></li>
                     <li><nuxt-link to="/game/gameasset">アセット</nuxt-link></li>
                 </ul>
