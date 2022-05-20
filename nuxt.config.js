@@ -17,7 +17,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'open-video-game-library',
+    title: 'Open Video Game Library',
     htmlAttrs: {
       lang: 'en'
     },
@@ -28,9 +28,9 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicons/favicon.ico' },
-      { rel: 'icon', type: 'image/png', href: '/favicons/icon-192x192.png' },
-      { rel: 'apple-touch-icon', type: 'image/png', href: '/favicons/apple-touch-icon-180x180.png' },
+      { rel: 'icon', type: 'image/x-icon', href: 'favicons/favicon.ico' },
+      { rel: 'icon', type: 'image/png', href: 'favicons/icon-192x192.png' },
+      { rel: 'apple-touch-icon', type: 'image/png', href: 'favicons/apple-touch-icon-180x180.png' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
     ]
   },
