@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/openvideogame/sliding_penguin", (function(a){return {data:[{url_download:a,url_code:a,breadcrumb:[{path:"\u002Fopenvideogame",name:"オープンビデオゲーム"},{path:"\u002Fopenvideogame\u002Fsliding_penguin",name:"Sliding penguin"}]}],fetch:{},mutations:[]}}("")));

@@ -1,14 +1,6 @@
 <template>
     <section class="container">
-        <section class="content-wrapper bg-heading">
-            <div class="content-container">
-                <h1 class="page-heading">
-                    <span class="material-icons">email</span>
-                    <span style="font-size: 48px;">Contact</span>
-                    <!-- <span class="sub-headline"></span> -->
-                </h1>
-            </div>
-        </section>
+        <Heading />
 
         <section class="content-wrapper">
             <div class="content-container">
@@ -47,8 +39,12 @@
 
 <script>
 import axios from 'axios'
+import Heading from '~/components/Heading.vue'
 
 export default {
+    components: {
+        Heading
+    },
     asyncData() {
         return {
             form: {

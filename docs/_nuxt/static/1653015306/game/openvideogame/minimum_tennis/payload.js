@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/game/openvideogame/minimum_tennis", {data:[{url_download:"https:\u002F\u002Fdrive.google.com\u002Ffile\u002Fd\u002F1MqepNQJyqSGWYCunM4aZPqPGDHO3xjHs\u002Fview",url_code:""}],fetch:{},mutations:[]});

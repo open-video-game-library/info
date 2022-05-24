@@ -4,31 +4,31 @@
             "name": "Hunter-Chameleon",
             "desc": "カメレオンのシューティングゲームです。絶え間なく出現するターゲットを狙い撃ちましょう。",
             "img": "openvideogame/chameleon.png",
-            "url": "/game/openvideogame/hunter_chameleon"
+            "url": "/openvideogame/hunter_chameleon"
         },
         {
             "name": "Escape fish",
             "desc": "魚のプラットフォームゲームです。障害物を避けつながら泳ぎましょう。",
             "img": "openvideogame/iwashi.png",
-            "url": "/game/openvideogame/escape_fish"
+            "url": "/openvideogame/escape_fish"
         },
         {
             "name": "Sliding peuguin",
             "desc": "ペンギンのドライビングゲームです。海に落ちないように氷の上を滑りましょう。",
             "img": "openvideogame/penguin.png",
-            "url": "/game/openvideogame/sliding_penguin"
+            "url": "/openvideogame/sliding_penguin"
         },
         {
             "name": "Minimum tennis",
             "desc": "シンプルな構成のテニスゲームです。上手くスイングのタイミングを取り、相手の隙を突きましょう。",
             "img": "openvideogame/tennis.png",
-            "url": "/game/openvideogame/minimum_tennis"
+            "url": "/openvideogame/minimum_tennis"
         },
         {
             "name": "Open FPS",
             "desc": "1人称視点の3Dシューティングゲームです。静的な的を狙い撃つモードと、動的な敵を倒すモードがあります。",
             "img": "openvideogame/fps.png",
-            "url": "/game/openvideogame/open_fps"
+            "url": "/openvideogame/open_fps"
         }
     ],
     "opensoursegame": [

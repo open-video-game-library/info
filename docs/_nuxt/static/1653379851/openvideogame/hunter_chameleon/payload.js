@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/openvideogame/hunter_chameleon", {data:[{url_download:"https:\u002F\u002Ftkystar.itch.io\u002Fhunter-chameleon",url_code:"",breadcrumb:[{path:"\u002Fopenvideogame",name:"オープンビデオゲーム"},{path:"\u002Fopenvideogame\u002Fhunter_chameleon",name:"Hunter-Chameleon"}]}],fetch:{},mutations:[]});

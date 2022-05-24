@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/openvideogame/escape_fish", (function(a){return {data:[{url_download:a,url_code:a,breadcrumb:[{path:"\u002Fopenvideogame",name:"オープンビデオゲーム"},{path:"\u002Fopenvideogame\u002Fescape_fish",name:"Escape fish"}]}],fetch:{},mutations:[]}}("")));

@@ -18,6 +18,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Open Video Game Library',
+    titleTemplate:  '%s - Open Video Game Library',
     htmlAttrs: {
       lang: 'en'
     },

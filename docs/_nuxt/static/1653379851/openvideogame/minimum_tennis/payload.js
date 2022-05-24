@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/openvideogame/minimum_tennis", {data:[{url_download:"https:\u002F\u002Fdrive.google.com\u002Ffile\u002Fd\u002F1MqepNQJyqSGWYCunM4aZPqPGDHO3xjHs\u002Fview",url_code:"",breadcrumb:[{path:"\u002Fopenvideogame",name:"オープンビデオゲーム"},{path:"\u002Fopenvideogame\u002Fminimum_tennis",name:"Minimum tennis"}]}],fetch:{},mutations:[]});

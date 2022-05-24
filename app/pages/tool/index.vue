@@ -1,14 +1,6 @@
 <template>
     <section class="container">
-        <section class="content-wrapper bg-heading">
-            <div class="content-container">
-                <h1 class="page-heading">
-                    <span class="material-icons">science</span>
-                    <span style="font-size: 48px;">Tool</span>
-                    <span class="sub-headline">研究利用できるツール</span>
-                </h1>
-            </div>
-        </section>
+        <Heading />
 
         <section id="Experiment" class="content-wrapper">
             <div class="content-container">
@@ -34,10 +26,12 @@
 
 <script>
 import SiteCard from '~/components/SiteCard.vue'
+import Heading from '~/components/Heading.vue'
 
 export default {
     components: {
-        SiteCard
+        SiteCard,
+        Heading
     },
     asyncData() {
         return {

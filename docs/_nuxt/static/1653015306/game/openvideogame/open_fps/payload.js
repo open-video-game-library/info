@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/game/openvideogame/open_fps", {data:[{url_download:"https:\u002F\u002Fdrive.google.com\u002Fdrive\u002Ffolders\u002F1Ns-XUXM8AC3rp9En5hZ_-FkjRgx87qEC",url_code:""}],fetch:{},mutations:[]});
