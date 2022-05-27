@@ -1,19 +1,6 @@
 <template>
     <section class="container">
-        <section class="content-wrapper bg-heading">
-            <div class="content-container">
-                <h1 class="page-heading">
-                    <!-- <img class="logo" src="@/assets/image/logo/Game_logo_black.png" /> -->
-                    <span class="material-icons" style="">sports_esports</span>
-                    <span style="font-size: 48px;">Game</span>
-                    <span class="sub-headline">
-                        <nuxt-link class="breadcrumb" :to="'/game'">研究利用できるゲーム</nuxt-link>
-                        ＞
-                        <strong>ゲームアセット</strong>
-                    </span>
-                </h1>
-            </div>
-        </section>
+        <Heading :breadcrumb="breadcrumb" />
 
         <section class="content-wrapper">
             <div class="content-container">
@@ -62,23 +49,33 @@ export default {
                 // {
                 //     title: "エフェクト",
                 //     img: "asset/Genre/effect.png",
-                //     to: "gameasset/effect"
+                //     to: "/tool/gameasset/effect"
                 // },
                 {
                     name: "UI/グラフィック",
                     img: "asset/Genre/ui.jpeg",
-                    url: "/game/gameasset/interface"
+                    url: "/tool/gameasset/interface"
                 },
                 // {
                 //     title: "教育/学習",
                 //     img: "asset/Genre/education.png",
-                //     to: "gameasset/education"
+                //     to: "/tool/gameasset/education"
                 // },
                 // {
                 //     title: "その他",
                 //     img: "",
-                //     to: "gameasset/other"
+                //     to: "/tool/gameasset/other"
                 // }
+            ],
+            breadcrumb: [
+                {
+                    path: '/tool',
+                    name: '研究利用できるツール'
+                },
+                {
+                    path: '/tool/gameasset',
+                    name: 'ゲームアセット'
+                }
             ]
         }
     }
@@ -88,12 +85,5 @@ export default {
 <style scoped>
 .el-card {
     margin: 20px 0;
-}
-
-.bg-heading {
-    background-image: url("~@/assets/image/background/heading_game.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
 }
 </style>

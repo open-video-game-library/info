@@ -1,20 +1,6 @@
 <template>
     <section class="container">
-        <section class="content-wrapper bg-heading">
-            <div class="content-container">
-                <h1 class="page-heading">
-                    <span class="material-icons" style="">sports_esports</span>
-                    <span style="font-size: 48px;">Game</span>
-                    <span class="sub-headline">
-                        <nuxt-link class="breadcrumb" :to="'/game'">研究利用できるゲーム</nuxt-link>
-                        ＞
-                        <nuxt-link class="breadcrumb" :to="'/game/gameasset'">ゲームアセット</nuxt-link>
-                        ＞
-                        <strong>3Dモデル</strong>
-                    </span>
-                </h1>
-            </div>
-        </section>
+        <Heading :breadcrumb="breadcrumb" />
 
         <section class="content-wrapper">
             <div class="content-container">
@@ -46,17 +32,25 @@ export default {
     },
     asyncData() {
         return {
-            gameasset: games.gameasset
+            gameasset: games.gameasset,
+            breadcrumb: [
+                {
+                    path: '/tool',
+                    name: '研究利用できるツール'
+                },
+                {
+                    path: '/tool/gameasset',
+                    name: 'ゲームアセット'
+                },
+                {
+                    path: '/tool/gameasset/3dmodel',
+                    name: '3Dモデル'
+                }
+            ]
         }
     }
 }
 </script>
 
 <style scoped>
-.bg-heading {
-    background-image: url("~@/assets/image/background/heading_game.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-}
 </style>>

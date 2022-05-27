@@ -1,19 +1,6 @@
 <template>
     <section class="container">
-        <section class="content-wrapper bg-heading">
-            <div class="content-container">
-                <h1 class="page-heading">
-                    <!-- <img class="logo" src="@/assets/image/logo/Game_logo_black.png" /> -->
-                    <span class="material-icons" style="">sports_esports</span>
-                    <span style="font-size: 48px;">Game</span>
-                    <span class="sub-headline">
-                        <nuxt-link class="breadcrumb" :to="'/game'">研究利用できるゲーム</nuxt-link>
-                        ＞
-                        <strong>ブラウザゲーム</strong>
-                    </span>
-                </h1>
-            </div>
-        </section>
+        <Heading :breadcrumb="breadcrumb" />
 
         <section class="content-wrapper">
             <div class="content-container">
@@ -44,19 +31,23 @@ export default {
     components: {
         SiteCard
     },
-    asyncData({ $axios }) {
+    asyncData() {
         return {
-            browsergame: games.browsergame
+            browsergame: games.browsergame,
+            breadcrumb: [
+                {
+                    path: '/tool',
+                    name: '研究利用できるツール'
+                },
+                {
+                    path: '/tool/browsergame',
+                    name: 'ブラウザゲーム'
+                }
+            ]
         }
     }
 }
 </script>
 
 <style scoped>
-.bg-heading {
-    background-image: url("~@/assets/image/background/heading_game.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-}
 </style>
