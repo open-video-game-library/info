@@ -1,0 +1,25 @@
+{
+    "tool": [
+        {
+            "name": "Multi View Recorder",
+            "desc": "PCにWebカメラを接続するだけで、複数画面を同時に録画することができるWebアプリケーションです。観察が難しいゲーム体験の定性的な評価にお使いください。最大4つのカメラを映せます。キャプチャボードを介して別のPCやディスプレイをWebカメラとして接続することで、ゲーム画面を映すことも可能です。",
+            "img": "Tool_multi_view_recorder.png",
+            "url": "https://open-video-game-library.github.io/multi-view-recorder/",
+            "isOurs": true
+        },
+        {
+            "name": "JumpLab",
+            "desc": "プラットフォーム（ジャンプアクション）ゲームのジャンプ処理やカメラ移動処理にまつわる、諸パラメタを可変にした実験用ソフトウェアです。",
+            "img": "Tool_jumplab.png",
+            "url": "https://fukuchi.org/works/jumplab/index.html",
+            "isOurs": false
+        },
+        {
+            "name": "Game Controllerizer",
+            "desc": "ディジタルゲーム拡張のためのミドルウェアです。多様な機器および情報源を既存ゲームへの入力として扱うことができます。",
+            "img": "Tool_game_controllerizer.png",
+            "url": "https://sites.google.com/view/gamecontrollerizer",
+            "isOurs": false
+        }
+    ]
+}

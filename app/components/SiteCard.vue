@@ -1,12 +1,12 @@
 <template>
     <div style="position: relative;">
-        <div v-if="isOurs" class="ovgl-line-horizontal"></div>
+        <!-- <div v-if="isOurs" class="ovgl-line-horizontal"></div>
         <div v-if="isOurs" class="ovgl-line-vertical"></div>
         <div v-if="isOurs" class="ovgl-mark">
             <span>Presented by</span>
             <span>OVGL</span>
-        </div>
-        <el-card :body-style="{'position': 'relative', 'height': '380px'}" shadow="hover">
+        </div> -->
+        <el-card :body-style="{position: 'relative', height: '380px'}" shadow="hover">
             <a v-if="url!==''" 
                 :href="url"
                 class="hover-pointer"
@@ -31,13 +31,13 @@ export default {
         name: String,
         desc: String,
         img: String,
-        url: String,
-        isOurs: Boolean
+        url: String
     }
 }
 </script>
 
 <style lang="scss" scoped>
+
 .scroll-box > p {
     color: #555C64;
 }

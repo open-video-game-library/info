@@ -12,7 +12,7 @@
 
         <section class="content-wrapper bg-white">
             <div class="content-container">
-                <el-row :gutter="30">
+                <!-- <el-row :gutter="30">
                     <el-col :span="12">
                         <PageCard
                             style="margin-bottom: 30px;"
@@ -33,7 +33,7 @@
                             :isOurs="game.isOurs"
                         />
                     </el-col>
-                </el-row>
+                </el-row> -->
             </div>
         </section>
     </section>
