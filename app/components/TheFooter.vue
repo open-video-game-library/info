@@ -10,20 +10,20 @@
                     <span>この取り組みを知る</span>
                     <li><nuxt-link to="/about#Abstract">概要</nuxt-link></li>
                     <li><nuxt-link to="/about#Member">メンバー</nuxt-link></li>
-                    <li><nuxt-link to="/game">ゲーム</nuxt-link></li>
+                    <!-- <li><nuxt-link to="/game">ゲーム</nuxt-link></li> -->
                     <li><nuxt-link to="/about#Publication">出版</nuxt-link></li>
                 </ul>
                 <ul>
                     <span>ゲームを見つける</span>
                     <li><nuxt-link to="/openvideogame">オープンビデオゲーム</nuxt-link></li>
-                    <li><nuxt-link to="/game/opensoursegame">オープンソースゲーム</nuxt-link></li>
-                    <li><nuxt-link to="/game/gameasset">アセット</nuxt-link></li>
+                    <li><nuxt-link to="/tool/opensoursegame">オープンソースゲーム</nuxt-link></li>
+                    <li><nuxt-link to="/tool/gameasset">アセット</nuxt-link></li>
+                    <li><nuxt-link to="/tool/browsergame">ブラウザゲーム</nuxt-link></li>
                 </ul>
                 <ul>
                     <span>実験ツールを見つける</span>
                     <li><a href="https://open-video-game-library.github.io/multi-view-recorder/" target="_blank" rel="noopener noreferrer">Multi View Recorder</a></li>
-                    <li><nuxt-link to="/tool#Experiment">評価実験ツール</nuxt-link></li>
-                    <li><nuxt-link to="/tool#Development">ゲーム開発ツール</nuxt-link></li>
+                    <li><nuxt-link to="/tool#Others">その他ツール</nuxt-link></li>
                 </ul>
                 <!-- <ul>
                     <span>管理者向け</span>

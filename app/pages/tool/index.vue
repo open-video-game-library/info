@@ -22,7 +22,7 @@
             </div>
         </section>
 
-        <section class="content-wrapper">
+        <section id="Others" class="content-wrapper">
             <div class="content-container">
                 <h2 class="text-center page-subheading">その他ツール一覧</h2>
                 <p class="text-center page-subdesc">他の研究者やゲーム開発者が提供している、評価・実験・開発に役立つツールやゲームも紹介します。</p>

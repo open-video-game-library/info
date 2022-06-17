@@ -78,7 +78,7 @@
                 </el-row>
                 <el-row :gutter="30" style="margin-top: 30px;">
                     <el-col :span="8">
-                        <button class="btn-page" @click="$router.push('/game')">
+                        <button class="btn-page" @click="$router.push('/openvideogame')">
                             <span class="text">ゲームを見つける</span>
                         </button>
                     </el-col>
