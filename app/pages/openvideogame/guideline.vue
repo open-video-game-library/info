@@ -1,19 +1,6 @@
 <template>
     <section class="container">
-        <section class="content-wrapper bg-heading">
-            <div class="content-container">
-                <h1 class="page-heading">
-                    <!-- <img class="logo" src="@/assets/image/logo/Game_logo_black.png" /> -->
-                    <span class="material-icons" style="">sports_esports</span>
-                    <span style="font-size: 48px;">Open Video Game</span>
-                    <span class="sub-headline">
-                        <nuxt-link class="breadcrumb" :to="'/openvideogame'">オープンビデオゲーム</nuxt-link>
-                        ＞
-                        <strong>ガイドライン</strong>
-                    </span>
-                </h1>
-            </div>
-        </section>
+        <Heading :breadcrumb="breadcrumb" />
 
         <section id="Guideline" class="content-wrapper">
             <div class="content-container">
@@ -21,7 +8,7 @@
                 <p class="text-center page-subdesc">このガイドラインでは、オープンビデオゲームを研究にご活用いただく際のルールと推奨事項についてご説明いたします。</p>
                 <h3 class="text-center page-subsubheading">ご利用OK/NG例</h3>
                 <el-row class="mb-60" :gutter="30">
-                    <el-col class="mb-30" :span="12">
+                    <el-col class="mb-30" :span="12" :xs="24">
                         <h4 class="text-center mb-15">OK</h4>
                         <el-card>
                             <p class="text-center mb-10">営利を目的としない以下のような利用</p>
@@ -80,6 +67,30 @@
         </section>
     </section>
 </template>
+
+<script>
+import Heading from '@/components/Heading.vue'
+
+export default {
+    components: {
+        Heading
+    },
+    asyncData() {
+        return {
+            breadcrumb: [
+                {
+                    path: '/openvideogame',
+                    name: 'オープンビデオゲーム'
+                },
+                {
+                    path: '/openvideogame/guideline',
+                    name: 'ガイドライン'
+                }
+            ]
+        }
+    }
+}
+</script>
 
 <style scoped>
 .bg-heading {

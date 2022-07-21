@@ -5,7 +5,7 @@
             <h1 class="page-heading">
                 <span class="material-icons">{{ material_icons }}</span>
 
-                <span style="font-size: 48px;">{{ title }}</span>
+                <span class="title">{{ title }}</span>
                 <span class="sub-headline">
                     <span v-for="(item, index) in breadcrumb" :key="item.name">
                         <span v-if="index !== breadcrumb.length - 1">
@@ -64,15 +64,31 @@ export default {
                 this.subtitle = '';
                 break;
         }
-        console.log(this.$route.name);
+        // console.log(this.$route.name);
     }
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .content-wrapper {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
+}
+
+.title {
+    font-size: 48px;
+}
+
+@media screen and (max-width: 780px) {
+    .title {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .content-wrapper {
+        background-size: auto 100%;
+    }
 }
 </style>

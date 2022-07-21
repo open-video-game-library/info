@@ -5,26 +5,32 @@
             <img v-bind:src="require('@/assets/image/logo/logo.png')"
                 style="width: 50%; margin-bottom: 40px" />
             </div>
-            <div class="flex">
-                <ul>
-                    <span>この取り組みを知る</span>
-                    <li><nuxt-link to="/about#Abstract">概要</nuxt-link></li>
-                    <li><nuxt-link to="/about#Member">メンバー</nuxt-link></li>
-                    <!-- <li><nuxt-link to="/game">ゲーム</nuxt-link></li> -->
-                    <li><nuxt-link to="/about#Publication">出版</nuxt-link></li>
-                </ul>
-                <ul>
-                    <span>ゲームを見つける</span>
-                    <li><nuxt-link to="/openvideogame">オープンビデオゲーム</nuxt-link></li>
-                    <li><nuxt-link to="/tool/opensoursegame">オープンソースゲーム</nuxt-link></li>
-                    <li><nuxt-link to="/tool/gameasset">アセット</nuxt-link></li>
-                    <li><nuxt-link to="/tool/browsergame">ブラウザゲーム</nuxt-link></li>
-                </ul>
-                <ul>
-                    <span>実験ツールを見つける</span>
-                    <li><a href="https://open-video-game-library.github.io/multi-view-recorder/" target="_blank" rel="noopener noreferrer">Multi View Recorder</a></li>
-                    <li><nuxt-link to="/tool#Others">その他ツール</nuxt-link></li>
-                </ul>
+            <div class="flex-box">
+                <div class="flex-item">
+                    <ul>
+                        <span>この取り組みを知る</span>
+                        <li><nuxt-link to="/about#Abstract">概要</nuxt-link></li>
+                        <li><nuxt-link to="/about#Member">メンバー</nuxt-link></li>
+                        <!-- <li><nuxt-link to="/game">ゲーム</nuxt-link></li> -->
+                        <li><nuxt-link to="/about#Publication">出版</nuxt-link></li>
+                    </ul>
+                </div>
+                <div class="flex-item">
+                    <ul>
+                        <span>ゲームを見つける</span>
+                        <li><nuxt-link to="/openvideogame">オープンビデオゲーム</nuxt-link></li>
+                        <li><nuxt-link to="/tool/opensoursegame">オープンソースゲーム</nuxt-link></li>
+                        <li><nuxt-link to="/tool/gameasset">アセット</nuxt-link></li>
+                        <li><nuxt-link to="/tool/browsergame">ブラウザゲーム</nuxt-link></li>
+                    </ul>
+                </div>
+                <div class="flex-item">
+                    <ul>
+                        <span>実験ツールを見つける</span>
+                        <li><a href="https://open-video-game-library.github.io/multi-view-recorder/" target="_blank" rel="noopener noreferrer">Multi View Recorder</a></li>
+                        <li><nuxt-link to="/tool#Others">その他ツール</nuxt-link></li>
+                    </ul>
+                </div>
                 <!-- <ul>
                     <span>管理者向け</span>
                     <li>準備中</li>
@@ -50,10 +56,6 @@
     background-color: #E6E6E6;
 }
 
-.flex {
-    display: flex;
-    justify-content: space-around;
-}
 
 ul > span {
     display: inline-block;
@@ -85,5 +87,14 @@ nuxt-link, a {
     transition : .3s;
     background-color: #444444;
 } */
+
+.flex-item {
+    flex-basis: 30%;
+    text-align: center;
+}
+ul {
+    display: inline-block;
+    text-align: left;
+}
 
 </style>>

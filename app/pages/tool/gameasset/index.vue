@@ -7,7 +7,7 @@
                 <h2 class="text-center page-subheading">アセット一覧</h2>
                 <p class="text-center page-subdesc">このページでは、ゲーム開発に使えるアセットを紹介します。</p>
                 <el-row :gutter="30">
-                    <el-col :span="12" v-for="asset in assets" :key="asset.name">
+                    <el-col :span="12" :xs="24" v-for="asset in assets" :key="asset.name">
                         <PageCard
                             style="margin-bottom: 30px;"
                             :name="asset.name"

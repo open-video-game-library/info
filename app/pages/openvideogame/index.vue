@@ -6,8 +6,8 @@
             <div class="content-container">
                 <h2 class="text-center page-subheading">ゲーム一覧</h2>
                 <p class="text-center page-subdesc">営利以外の目的であれば自由にお使いいただけます。詳しいガイドラインは<nuxt-link class="general-link" to="/openvideogame/guideline">こちら</nuxt-link>。</p>
-                <el-row :gutter="30">
-                    <el-col :span="12" v-for="game in openvideogame" :key="game.name">
+                <div class="flex-box">
+                    <div class="flex-item" v-for="game in openvideogame" :key="game.name">
                         <PageCard
                             style="margin-bottom: 30px;"
                             :name="game.name"
@@ -15,8 +15,8 @@
                             :img="game.img"
                             :url="game.url"
                         />
-                    </el-col>
-                    <el-col :span="12">
+                    </div>
+                    <div class="flex-item">
                         <PageCard
                             style="margin-bottom: 30px;"
                             :name="'こういうゲームがほしい！'"
@@ -24,8 +24,8 @@
                             :img="'more.png'"
                             :url="'/contact'"
                         />
-                    </el-col>
-                </el-row>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -75,5 +75,15 @@ export default {
 <style lang="scss" scoped>
 li {
     margin-left: -20px;
+}
+
+.flex-item {
+    flex-basis: 40%;
+}
+
+@media screen and (max-width: 780px) {
+    .flex-item {
+        flex-basis: 80%;
+    }
 }
 </style>

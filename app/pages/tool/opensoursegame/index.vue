@@ -9,7 +9,7 @@
 
                 <h3 class="text-center page-subsubheading">スポーツ</h3>
                 <el-row :gutter="30">
-                    <el-col :span="8" v-for="game in opensoursegame" :key="game.name">
+                    <el-col :span="8" :xs="24" v-for="game in opensoursegame" :key="game.name">
                         <SiteCard
                             v-if="game.genre==='sports'"
                             style="margin-bottom: 30px;"
@@ -23,7 +23,7 @@
 
                 <h3 class="text-center page-subsubheading">シューティング</h3>
                 <el-row :gutter="30">
-                    <el-col :span="8" v-for="game in opensoursegame" :key="game.name">
+                    <el-col :span="8" :xs="24" v-for="game in opensoursegame" :key="game.name">
                         <SiteCard
                             v-if="game.genre==='shooting'"
                             style="margin-bottom: 30px;"
@@ -37,7 +37,7 @@
 
                 <h3 class="text-center page-subsubheading">プラットフォーム</h3>
                 <el-row :gutter="30">
-                    <el-col :span="8" v-for="game in opensoursegame" :key="game.name">
+                    <el-col :span="8" :xs="24" v-for="game in opensoursegame" :key="game.name">
                         <SiteCard
                             v-if="game.genre==='platform'"
                             style="margin-bottom: 30px;"
@@ -51,7 +51,7 @@
 
                 <h3 class="text-center page-subsubheading">レース/ドライビング</h3>
                 <el-row :gutter="30">
-                    <el-col :span="8" v-for="game in opensoursegame" :key="game.name">
+                    <el-col :span="8" :xs="24" v-for="game in opensoursegame" :key="game.name">
                         <SiteCard
                             v-if="game.genre==='driving'"
                             style="margin-bottom: 30px;"
@@ -65,7 +65,7 @@
 
                 <h3 class="text-center page-subsubheading">アクション</h3>
                 <el-row :gutter="30">
-                    <el-col :span="8" v-for="game in opensoursegame" :key="game.name">
+                    <el-col :span="8" :xs="24" v-for="game in opensoursegame" :key="game.name">
                         <SiteCard
                             v-if="game.genre==='action'"
                             style="margin-bottom: 30px;"
@@ -79,7 +79,7 @@
 
                 <h3 class="text-center page-subsubheading">格闘</h3>
                 <el-row :gutter="30">
-                    <el-col :span="8" v-for="game in opensoursegame" :key="game.name">
+                    <el-col :span="8" :xs="24" v-for="game in opensoursegame" :key="game.name">
                         <SiteCard
                             v-if="game.genre==='fighting'"
                             style="margin-bottom: 30px;"
@@ -93,7 +93,7 @@
 
                 <h3 class="text-center page-subsubheading">パズル</h3>
                 <el-row :gutter="30">
-                    <el-col :span="8" v-for="game in opensoursegame" :key="game.name">
+                    <el-col :span="8" :xs="24" v-for="game in opensoursegame" :key="game.name">
                         <SiteCard
                             v-if="game.genre==='puzzle'"
                             style="margin-bottom: 30px;"
@@ -107,7 +107,7 @@
 
                 <h3 class="text-center page-subsubheading">その他</h3>
                 <el-row :gutter="30">
-                    <el-col :span="8" v-for="game in opensoursegame" :key="game.name">
+                    <el-col :span="8" :xs="24" v-for="game in opensoursegame" :key="game.name">
                         <SiteCard
                             v-if="game.genre==='other'"
                             style="margin-bottom: 30px;"

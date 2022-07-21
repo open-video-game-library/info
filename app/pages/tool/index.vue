@@ -6,10 +6,9 @@
             <div class="content-container">
                 <!-- <h2 class="text-center page-subheading">ツール一覧</h2> -->
                 <p class="text-center page-subdesc">ゲーム研究の実験や評価に利用できるツールを提供しています。</p>
-                <el-row :gutter="30">
-                    <el-col :span="24" v-for="tool in tools" :key="tool.name">
+                <div class="flex-box">
+                    <div class="flex-item" v-for="tool in tools" :key="tool.name" v-if="tool.isOurs">
                         <ArticleCard
-                            v-if="tool.isOurs"
                             style="margin-bottom: 30px;"
                             :name="tool.name"
                             :desc="tool.desc"
@@ -17,8 +16,8 @@
                             :url="tool.url"
                             :img_span="8"
                         />
-                    </el-col>
-                </el-row>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -26,10 +25,9 @@
             <div class="content-container">
                 <h2 class="text-center page-subheading">その他ツール一覧</h2>
                 <p class="text-center page-subdesc">他の研究者やゲーム開発者が提供している、評価・実験・開発に役立つツールやゲームも紹介します。</p>
-                <el-row :gutter="30" style="margin-bottom: 60px;">
-                    <el-col :span="12" v-for="tool in tools" :key="tool.name">
+                <div class="flex-box" style="margin-bottom: 60px;">
+                    <div class="flex-item" v-for="tool in tools" :key="tool.name" v-if="!tool.isOurs">
                         <ArticleCard
-                            v-if="!tool.isOurs"
                             style="margin-bottom: 30px;"
                             :name="tool.name"
                             :desc="tool.desc"
@@ -37,11 +35,11 @@
                             :url="tool.url"
                             :img_span="12"
                         />
-                    </el-col>
-                </el-row>
+                    </div>
+                </div>
 
-                <el-row :gutter="30">
-                    <el-col :span="12" v-for="game in games" :key="game.name">
+                <div class="flex-box">
+                    <div class="flex-item" v-for="game in games" :key="game.name">
                         <PageCard
                             style="margin-bottom: 30px;"
                             :name="game.name"
@@ -50,8 +48,8 @@
                             :url="game.url"
                             :isOurs="game.isOurs"
                         />
-                    </el-col>
-                </el-row>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -114,4 +112,18 @@ export default {
     background-size: 100%;
     background-position: center;
 }
+
+.flex-item {
+    flex-basis: 100%;
+}
+#Others .flex-item {
+    flex-basis: 40%;
+}
+
+@media screen and (max-width: 780px) {
+    #Others .flex-item {
+        flex-basis: 100%;
+    }
+}
+
 </style>

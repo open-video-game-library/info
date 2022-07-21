@@ -10,7 +10,7 @@
                 style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;">
                 <h1 class="page-heading" style="top: 0;">
                     <span class="material-icons">info</span>
-                    <span style="font-size: 48px;">About</span>
+                    <span class="title">About</span>
                     <span class="sub-headline">このサービスについて</span>
                 </h1>
                 <div style="padding-bottom: 120px; position: absolute; bottom: 0;">
@@ -26,73 +26,50 @@
             </div>
         </section>
 
-        <section class="content-wrapper bg-white">
+        <section class="content-wrapper bg-white" id="Contribution">
             <div class="content-container">
                 <h2 class="text-center page-subheading">Open Video Game Libraryでできること</h2>
 
-                <el-row :gutter="30">
-                    <el-col :span="8">
+                <div class="flex-box">
+                    <div class="flex-item">
                         <div class="text-center">
                             <img style="width: 50%;" v-bind:src="require('@/assets/image/logo/can1.png')" />
                         </div>
-                    </el-col>
-                    <el-col :span="8">
-                        <div class="text-center">
-                            <img style="width: 50%;" v-bind:src="require('@/assets/image/logo/can2.png')" />
-                        </div>
-                    </el-col>
-                    <el-col :span="8">
-                        <div class="text-center">
-                            <img style="width: 50%;" v-bind:src="require('@/assets/image/logo/can3.png')" />
-                        </div>
-                    </el-col>
-                </el-row>
-                <el-row :gutter="30" style="margin-top: 10px;">
-                    <el-col :span="8" class="flex-center">
                         <h3 class="text-center">研究で使えるゲームを見つける</h3>
-                    </el-col>
-                    <el-col :span="8" class="flex-center">
-                        <h3 class="text-center">研究で使えるツールを見つける</h3>
-                    </el-col>
-                    <el-col :span="8" class="flex-center">
-                        <h3 class="text-center">ゲーム研究の知見を深める</h3>
-                    </el-col>
-                </el-row>
-                <el-row :gutter="40">
-                    <el-col :span="8">
-                        <p>
-                            <!-- 研究で利用されることを前提に作成されたオープンビデオゲームや、ソースコードが公開され、研究に合わせて修正できるオープンソースゲームを見つけ、利用することができます。 -->
+                        <p style="height: 80px;">
                             研究で利用されることを前提に我々が作成したオープンビデオゲームや、研究に合わせて編集できる外部のオープンソースゲームを見つけ、利用することができます。
                         </p>
-                    </el-col>
-                    <el-col :span="8">
-                        <p>
-                            ゲームを用いた体験やデバイスの評価実験を行う際に有益な録画機能や、アンケートを見つけ、利用することができます。
-                        </p>
-                    </el-col>
-                    <el-col :span="8">
-                        <p>
-                            ゲーム開発をする上でためになる情報や、ゲーム研究をする上で抑えておくべきポイントを知ることができます。
-                        </p>
-                    </el-col>
-                </el-row>
-                <el-row :gutter="30" style="margin-top: 30px;">
-                    <el-col :span="8">
                         <button class="btn-page" @click="$router.push('/openvideogame')">
                             <span class="text">ゲームを見つける</span>
                         </button>
-                    </el-col>
-                    <el-col :span="8">
+                    </div>
+
+                    <div class="flex-item">
+                        <div class="text-center">
+                            <img style="width: 50%;" v-bind:src="require('@/assets/image/logo/can2.png')" />
+                        </div>
+                        <h3 class="text-center">研究で使えるツールを見つける</h3>
+                        <p style="height: 80px;">
+                            ゲームを用いた体験やデバイスの評価実験を行う際に有益な録画機能や、アンケートを見つけ、利用することができます。
+                        </p>
                         <button class="btn-page" @click="$router.push('/tool')">
                             <span class="text">ツールを見つける</span>
                         </button>
-                    </el-col>
-                    <el-col :span="8">
+                    </div>
+
+                    <div class="flex-item">
+                        <div class="text-center">
+                            <img style="width: 50%;" v-bind:src="require('@/assets/image/logo/can3.png')" />
+                        </div>
+                        <h3 class="text-center">ゲーム研究の知見を深める</h3>
+                        <p style="height: 80px;">
+                            ゲーム開発をする上でためになる情報や、ゲーム研究をする上で抑えておくべきポイントを知ることができます。
+                        </p>
                         <button class="btn-page" @click="$router.push('/article')">
                             <span class="text">記事を読む</span>
                         </button>
-                    </el-col>
-                </el-row>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -102,8 +79,8 @@
                 <p class="page-subdesc text-center">
                     明治大学渡邊恵太研究室のメンバーが中心となり運営。さらに、ゲーム開発・研究に関する幅広い知見を有した外部メンバーを迎えプロジェクト推進中。
                 </p>
-                <el-row :gutter="8" style="width: 100%;">
-                    <el-col :span="8" v-for="mem in member" :key="mem.name_short">
+                <div class="flex-box" style="">
+                    <div class="flex-item" v-for="mem in member" :key="mem.name_short">
                         <div style="width: 72%; margin: 0 auto;">
                             <MemberCard
                                 class="grid-content"
@@ -114,8 +91,8 @@
                                 :homepage="mem.homepage"
                             />
                         </div>
-                    </el-col>
-                </el-row>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -310,5 +287,31 @@ li {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center top;
+}
+
+.flex-item {
+    flex-basis: 30%;
+}
+.title {
+    font-size: 48px;
+}
+
+@media screen and (max-width: 780px) {
+    .flex-item {
+        flex-basis: 80%;
+    }
+    #Contribution .flex-item {
+        margin-bottom: 120px;
+    }
+    #Contribution .flex-item:last-child {
+        margin-bottom: 60px;
+    }
+    .title {
+        font-size: 32px;
+    }
+
+    .sub-headline {
+        flex-basis: auto;
+    }
 }
 </style>

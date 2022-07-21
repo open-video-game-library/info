@@ -38,6 +38,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    'normalize.css',
     '@/assets/css/element-ui.scss'
   ],
 
@@ -45,9 +46,10 @@ export default {
   plugins: [
     '@/plugins/element-ui',
     '@/plugins/firebase.js',
-    '@/plugins/firebase.auth.js'
+    '@/plugins/firebase.auth.js',
+    '@/plugins/routerOption.js'
   ],
-
+  
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 

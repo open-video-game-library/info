@@ -85,4 +85,13 @@ export default {
     opacity: 1;
     transition: .2s ease-in-out;
 }
+
+@media screen and (max-width: 780px) {
+    .hover-elems {
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+    .hover-elems {
+        opacity: 1;
+    }
+}
 </style>

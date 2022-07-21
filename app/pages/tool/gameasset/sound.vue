@@ -7,7 +7,7 @@
                 <h2 class="text-center page-subheading">サウンド</h2>
 
                 <el-row :gutter="30">
-                    <el-col :span="8" v-for="game in gameasset" :key="game.name">
+                    <el-col :span="8" :xs="24" v-for="game in gameasset" :key="game.name">
                         <SiteCard
                             v-if="game.genre==='sound'"
                             style="margin-bottom: 30px;"

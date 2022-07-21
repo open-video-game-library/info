@@ -8,7 +8,7 @@
                 <p class="text-center page-subdesc">このページでは、ブラウザ上で遊べるゲームを紹介します。研究に合ったゲームを探してみましょう。</p>
 
                 <el-row :gutter="30">
-                    <el-col :span="8" v-for="game in browsergame" :key="game.name">
+                    <el-col :span="8" :xs="24" v-for="game in browsergame" :key="game.name">
                         <SiteCard
                             style="margin-bottom: 30px;"
                             :name="game.name"

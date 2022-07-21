@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/openvideogame/guideline", {data:[{}],fetch:{},mutations:[]});
