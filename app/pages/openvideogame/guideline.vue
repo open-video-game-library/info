@@ -30,7 +30,7 @@
                         </el-card>
                     </el-col>
 
-                    <el-col :span="12">
+                    <el-col :span="12" :xs="24">
                         <h4 class="text-center mb-15">NG</h4>
                         <el-card>
                             <p class="text-center">営利を目的とする利用</p>
