@@ -301,7 +301,7 @@ li {
         flex-basis: 80%;
     }
     #Contribution .flex-item {
-        margin-bottom: 120px;
+        margin-bottom: 80px;
     }
     #Contribution .flex-item:last-child {
         margin-bottom: 60px;

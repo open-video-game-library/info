@@ -2,7 +2,7 @@
     <div class="top-wrapper">
         <div class="top-container" style="color: white;">
             <div class="title text-center" style="padding-bottom: 80px;">
-                <img width="480" v-bind:src="require('@/assets/image/logo/logo_white.png')" />
+                <img class="logo" v-bind:src="require('@/assets/image/logo/logo_white.png')" />
             </div>
 
             <p style="padding: 0; height: 48px;">
@@ -17,23 +17,6 @@
                 </button>
             </div>
 
-            <!-- <el-row class="rect" :gutter="40" style="margin: 0 auto;">
-                <el-col :span="17">
-                    
-                </el-col>
-                <el-col :span="7" class="text-center"
-                    style="height: 48px; border-left: 1px white solid;">
-                    <nuxt-link
-                        to="/about"
-                        class="hover-pointer"
-                        tag="img" 
-                        v-bind:src="playBtnSrc"
-                        style="height: 48px;"
-                        @mouseover.native="playBtnSrc = playBtnSrc1"
-                        @mouseleave.native="playBtnSrc = playBtnSrc0"
-                    ></nuxt-link>
-                </el-col>
-            </el-row> -->
         </div>
     </div>
 </template>
@@ -59,12 +42,19 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
-.rect {
-    width: 660px;
-    border: 1px white solid;
-    border-radius: 20px;
-    padding: 15px 0;
+.top-container {
+    width: 92%;
+    margin: 0 auto;
+}
+.logo {
+    width: 480px;
+}
+@media screen and (max-width: 780px) {
+   .logo {
+        width: 320px;
+    }
 }
 
 /* From uiverse.io by @mateusneves */
