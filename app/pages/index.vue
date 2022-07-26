@@ -5,7 +5,7 @@
                 <img class="logo" v-bind:src="require('@/assets/image/logo/logo_white.png')" />
             </div>
 
-            <p style="padding: 0; height: 48px;">
+            <p class="desc">
                 このサイトではゲーム研究に使えるゲームのダウンロードや研究を進める上でのヒントを知ることができます。
             </p>
             <div class="text-center" style="margin-top: 15px">
@@ -51,9 +51,17 @@ export default {
 .logo {
     width: 480px;
 }
+.desc {
+    padding: 0;
+    height: 48px;
+    text-align: center;
+}
 @media screen and (max-width: 780px) {
    .logo {
         width: 320px;
+    }
+    .desc {
+        text-align: left;
     }
 }
 
